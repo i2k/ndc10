@@ -1,0 +1,5212 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://ndc10.linkedopendata.jp/#root> a skos:Concept ;
+	skos:prefLabel "日本十進分類法新訂10版"@ja ;
+	skos:notation "root" .
+
+<http://ndc10.linkedopendata.jp/#0> a skos:Concept ;
+	skos:prefLabel "総記（情報学、図書館、図書、百科事典、一般論文集、逐次刊行物、団体、ジャーナリズム、叢書）"@ja ;
+	skos:notation "0" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#root> .
+
+<http://ndc10.linkedopendata.jp/#1> a skos:Concept ;
+	skos:prefLabel "哲学（哲学、心理学、倫理学、宗教）"@ja ;
+	skos:notation "1" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#root> .
+
+<http://ndc10.linkedopendata.jp/#2> a skos:Concept ;
+	skos:prefLabel "歴史（歴史、伝記、地理）"@ja ;
+	skos:notation "2" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#root> .
+
+<http://ndc10.linkedopendata.jp/#3> a skos:Concept ;
+	skos:prefLabel "社会科学（政治、法律、経済、統計、社会、教育、風俗習慣、国防）"@ja ;
+	skos:notation "3" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#root> .
+
+<http://ndc10.linkedopendata.jp/#4> a skos:Concept ;
+	skos:prefLabel "自然科学（数学、理学、医学）"@ja ;
+	skos:notation "4" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#root> .
+
+<http://ndc10.linkedopendata.jp/#5> a skos:Concept ;
+	skos:prefLabel "技術（工学、工業、家政学）"@ja ;
+	skos:notation "5" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#root> .
+
+<http://ndc10.linkedopendata.jp/#6> a skos:Concept ;
+	skos:prefLabel "産業（農林水産業、商業、運輸、通信）"@ja ;
+	skos:notation "6" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#root> .
+
+<http://ndc10.linkedopendata.jp/#7> a skos:Concept ;
+	skos:prefLabel "芸術（美術、音楽、演劇、スポーツ、諸芸、娯楽）"@ja ;
+	skos:notation "7" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#root> .
+
+<http://ndc10.linkedopendata.jp/#8> a skos:Concept ;
+	skos:prefLabel "言語"@ja ;
+	skos:notation "8" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#root> .
+
+<http://ndc10.linkedopendata.jp/#9> a skos:Concept ;
+	skos:prefLabel "文学"@ja ;
+	skos:notation "9" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#root> .
+
+<http://ndc10.linkedopendata.jp/#00> a skos:Concept ;
+	skos:prefLabel "総記"@ja ;
+	skos:notation "00" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#0> .
+
+<http://ndc10.linkedopendata.jp/#01> a skos:Concept ;
+	skos:prefLabel "図書館、図書館情報学"@ja ;
+	skos:notation "01" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#00> .
+
+<http://ndc10.linkedopendata.jp/#02> a skos:Concept ;
+	skos:prefLabel "図書、書誌学"@ja ;
+	skos:notation "02" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#00> .
+
+<http://ndc10.linkedopendata.jp/#03> a skos:Concept ;
+	skos:prefLabel "百科事典、用語索引"@ja ;
+	skos:notation "03" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#00> .
+
+<http://ndc10.linkedopendata.jp/#04> a skos:Concept ;
+	skos:prefLabel "一般論文集、一般講演集、雑著"@ja ;
+	skos:notation "04" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#00> .
+
+<http://ndc10.linkedopendata.jp/#05> a skos:Concept ;
+	skos:prefLabel "逐次刊行物、一般年鑑"@ja ;
+	skos:notation "05" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#00> .
+
+<http://ndc10.linkedopendata.jp/#06> a skos:Concept ;
+	skos:prefLabel "団体、博物館"@ja ;
+	skos:notation "06" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#00> .
+
+<http://ndc10.linkedopendata.jp/#07> a skos:Concept ;
+	skos:prefLabel "ジャーナリズム、新聞"@ja ;
+	skos:notation "07" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#00> .
+
+<http://ndc10.linkedopendata.jp/#08> a skos:Concept ;
+	skos:prefLabel "叢書、全集、選集"@ja ;
+	skos:notation "08" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#00> .
+
+<http://ndc10.linkedopendata.jp/#09> a skos:Concept ;
+	skos:prefLabel "貴重書、郷土資料、その他の特別コレクション"@ja ;
+	skos:notation "09" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#00> .
+
+<http://ndc10.linkedopendata.jp/#10> a skos:Concept ;
+	skos:prefLabel "哲学"@ja ;
+	skos:notation "10" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#1> .
+
+<http://ndc10.linkedopendata.jp/#11> a skos:Concept ;
+	skos:prefLabel "哲学各論"@ja ;
+	skos:notation "11" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#10> .
+
+<http://ndc10.linkedopendata.jp/#12> a skos:Concept ;
+	skos:prefLabel "東洋思想"@ja ;
+	skos:notation "12" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#10> .
+
+<http://ndc10.linkedopendata.jp/#13> a skos:Concept ;
+	skos:prefLabel "西洋哲学"@ja ;
+	skos:notation "13" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#10> .
+
+<http://ndc10.linkedopendata.jp/#14> a skos:Concept ;
+	skos:prefLabel "心理学"@ja ;
+	skos:notation "14" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#10> .
+
+<http://ndc10.linkedopendata.jp/#15> a skos:Concept ;
+	skos:prefLabel "倫理学、道徳"@ja ;
+	skos:notation "15" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#10> .
+
+<http://ndc10.linkedopendata.jp/#16> a skos:Concept ;
+	skos:prefLabel "宗教"@ja ;
+	skos:notation "16" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#1> .
+
+<http://ndc10.linkedopendata.jp/#17> a skos:Concept ;
+	skos:prefLabel "神道"@ja ;
+	skos:notation "17" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#16> .
+
+<http://ndc10.linkedopendata.jp/#18> a skos:Concept ;
+	skos:prefLabel "仏教"@ja ;
+	skos:notation "18" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#16> .
+
+<http://ndc10.linkedopendata.jp/#19> a skos:Concept ;
+	skos:prefLabel "キリスト教、ユダヤ教"@ja ;
+	skos:notation "19" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#16> .
+
+<http://ndc10.linkedopendata.jp/#20> a skos:Concept ;
+	skos:prefLabel "歴史、世界史、文化史"@ja ;
+	skos:notation "20" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#2> .
+
+<http://ndc10.linkedopendata.jp/#21> a skos:Concept ;
+	skos:prefLabel "日本史"@ja ;
+	skos:notation "21" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#20> .
+
+<http://ndc10.linkedopendata.jp/#22> a skos:Concept ;
+	skos:prefLabel "アジア史、東洋史"@ja ;
+	skos:notation "22" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#20> .
+
+<http://ndc10.linkedopendata.jp/#23> a skos:Concept ;
+	skos:prefLabel "ヨーロッパ史、西洋史"@ja ;
+	skos:notation "23" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#20> .
+
+<http://ndc10.linkedopendata.jp/#24> a skos:Concept ;
+	skos:prefLabel "アフリカ史"@ja ;
+	skos:notation "24" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#20> .
+
+<http://ndc10.linkedopendata.jp/#25> a skos:Concept ;
+	skos:prefLabel "北アメリカ史"@ja ;
+	skos:notation "25" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#20> .
+
+<http://ndc10.linkedopendata.jp/#26> a skos:Concept ;
+	skos:prefLabel "南アメリカ史"@ja ;
+	skos:notation "26" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#20> .
+
+<http://ndc10.linkedopendata.jp/#27> a skos:Concept ;
+	skos:prefLabel "オセアニア史、両極地方史"@ja ;
+	skos:notation "27" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#20> .
+
+<http://ndc10.linkedopendata.jp/#28> a skos:Concept ;
+	skos:prefLabel "伝記"@ja ;
+	skos:notation "28" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#20> .
+
+<http://ndc10.linkedopendata.jp/#29> a skos:Concept ;
+	skos:prefLabel "地理、地誌、紀行"@ja ;
+	skos:notation "29" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#2> .
+
+<http://ndc10.linkedopendata.jp/#30> a skos:Concept ;
+	skos:prefLabel "社会科学"@ja ;
+	skos:notation "30" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#3> .
+
+<http://ndc10.linkedopendata.jp/#31> a skos:Concept ;
+	skos:prefLabel "政治"@ja ;
+	skos:notation "31" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#30> .
+
+<http://ndc10.linkedopendata.jp/#32> a skos:Concept ;
+	skos:prefLabel "法律"@ja ;
+	skos:notation "32" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#30> .
+
+<http://ndc10.linkedopendata.jp/#33> a skos:Concept ;
+	skos:prefLabel "経済"@ja ;
+	skos:notation "33" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#30> .
+
+<http://ndc10.linkedopendata.jp/#34> a skos:Concept ;
+	skos:prefLabel "財政"@ja ;
+	skos:notation "34" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#30> .
+
+<http://ndc10.linkedopendata.jp/#35> a skos:Concept ;
+	skos:prefLabel "統計"@ja ;
+	skos:notation "35" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#30> .
+
+<http://ndc10.linkedopendata.jp/#36> a skos:Concept ;
+	skos:prefLabel "社会"@ja ;
+	skos:notation "36" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#30> .
+
+<http://ndc10.linkedopendata.jp/#37> a skos:Concept ;
+	skos:prefLabel "教育"@ja ;
+	skos:notation "37" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#30> .
+
+<http://ndc10.linkedopendata.jp/#38> a skos:Concept ;
+	skos:prefLabel "風俗習慣、民俗学、民族学"@ja ;
+	skos:notation "38" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#30> .
+
+<http://ndc10.linkedopendata.jp/#39> a skos:Concept ;
+	skos:prefLabel "国防、軍事"@ja ;
+	skos:notation "39" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#30> .
+
+<http://ndc10.linkedopendata.jp/#40> a skos:Concept ;
+	skos:prefLabel "自然科学"@ja ;
+	skos:notation "40" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#4> .
+
+<http://ndc10.linkedopendata.jp/#41> a skos:Concept ;
+	skos:prefLabel "数学"@ja ;
+	skos:notation "41" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#40> .
+
+<http://ndc10.linkedopendata.jp/#42> a skos:Concept ;
+	skos:prefLabel "物理学"@ja ;
+	skos:notation "42" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#40> .
+
+<http://ndc10.linkedopendata.jp/#43> a skos:Concept ;
+	skos:prefLabel "化学"@ja ;
+	skos:notation "43" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#40> .
+
+<http://ndc10.linkedopendata.jp/#44> a skos:Concept ;
+	skos:prefLabel "天文学、宇宙科学"@ja ;
+	skos:notation "44" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#40> .
+
+<http://ndc10.linkedopendata.jp/#45> a skos:Concept ;
+	skos:prefLabel "地球科学、地学"@ja ;
+	skos:notation "45" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#40> .
+
+<http://ndc10.linkedopendata.jp/#46> a skos:Concept ;
+	skos:prefLabel "生物科学、一般生物学"@ja ;
+	skos:notation "46" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#40> .
+
+<http://ndc10.linkedopendata.jp/#47> a skos:Concept ;
+	skos:prefLabel "植物学"@ja ;
+	skos:notation "47" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#46> .
+
+<http://ndc10.linkedopendata.jp/#48> a skos:Concept ;
+	skos:prefLabel "動物学"@ja ;
+	skos:notation "48" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#46> .
+
+<http://ndc10.linkedopendata.jp/#49> a skos:Concept ;
+	skos:prefLabel "医学、薬学"@ja ;
+	skos:notation "49" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#4> .
+
+<http://ndc10.linkedopendata.jp/#50> a skos:Concept ;
+	skos:prefLabel "技術、工学"@ja ;
+	skos:notation "50" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#5> .
+
+<http://ndc10.linkedopendata.jp/#51> a skos:Concept ;
+	skos:prefLabel "建設工学、土木工学"@ja ;
+	skos:notation "51" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#50> .
+
+<http://ndc10.linkedopendata.jp/#52> a skos:Concept ;
+	skos:prefLabel "建築学"@ja ;
+	skos:notation "52" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#50> .
+
+<http://ndc10.linkedopendata.jp/#53> a skos:Concept ;
+	skos:prefLabel "機械工学、原子力工学"@ja ;
+	skos:notation "53" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#50> .
+
+<http://ndc10.linkedopendata.jp/#54> a skos:Concept ;
+	skos:prefLabel "電気工学"@ja ;
+	skos:notation "54" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#50> .
+
+<http://ndc10.linkedopendata.jp/#55> a skos:Concept ;
+	skos:prefLabel "海洋工学、船舶工学、兵器、軍事工学"@ja ;
+	skos:notation "55" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#50> .
+
+<http://ndc10.linkedopendata.jp/#56> a skos:Concept ;
+	skos:prefLabel "金属工学、鉱山工学"@ja ;
+	skos:notation "56" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#50> .
+
+<http://ndc10.linkedopendata.jp/#57> a skos:Concept ;
+	skos:prefLabel "化学工業"@ja ;
+	skos:notation "57" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#50> .
+
+<http://ndc10.linkedopendata.jp/#58> a skos:Concept ;
+	skos:prefLabel "製造工業"@ja ;
+	skos:notation "58" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#50> .
+
+<http://ndc10.linkedopendata.jp/#59> a skos:Concept ;
+	skos:prefLabel "家政学、生活科学"@ja ;
+	skos:notation "59" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#5> .
+
+<http://ndc10.linkedopendata.jp/#60> a skos:Concept ;
+	skos:prefLabel "産業"@ja ;
+	skos:notation "60" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#6> .
+
+<http://ndc10.linkedopendata.jp/#61> a skos:Concept ;
+	skos:prefLabel "農業"@ja ;
+	skos:notation "61" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#60> .
+
+<http://ndc10.linkedopendata.jp/#62> a skos:Concept ;
+	skos:prefLabel "園芸、造園"@ja ;
+	skos:notation "62" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#60> .
+
+<http://ndc10.linkedopendata.jp/#63> a skos:Concept ;
+	skos:prefLabel "蚕糸業"@ja ;
+	skos:notation "63" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#60> .
+
+<http://ndc10.linkedopendata.jp/#64> a skos:Concept ;
+	skos:prefLabel "畜産業、獣医学"@ja ;
+	skos:notation "64" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#60> .
+
+<http://ndc10.linkedopendata.jp/#65> a skos:Concept ;
+	skos:prefLabel "林業、狩猟"@ja ;
+	skos:notation "65" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#60> .
+
+<http://ndc10.linkedopendata.jp/#66> a skos:Concept ;
+	skos:prefLabel "水産業"@ja ;
+	skos:notation "66" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#60> .
+
+<http://ndc10.linkedopendata.jp/#67> a skos:Concept ;
+	skos:prefLabel "商業"@ja ;
+	skos:notation "67" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#60> .
+
+<http://ndc10.linkedopendata.jp/#68> a skos:Concept ;
+	skos:prefLabel "運輸、交通、観光事業"@ja ;
+	skos:notation "68" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#60> .
+
+<http://ndc10.linkedopendata.jp/#69> a skos:Concept ;
+	skos:prefLabel "通信事業"@ja ;
+	skos:notation "69" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#60> .
+
+<http://ndc10.linkedopendata.jp/#70> a skos:Concept ;
+	skos:prefLabel "芸術、美術"@ja ;
+	skos:notation "70" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#7> .
+
+<http://ndc10.linkedopendata.jp/#71> a skos:Concept ;
+	skos:prefLabel "彫刻、オブジェ"@ja ;
+	skos:notation "71" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#70> .
+
+<http://ndc10.linkedopendata.jp/#72> a skos:Concept ;
+	skos:prefLabel "絵画、書、書道"@ja ;
+	skos:notation "72" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#70> .
+
+<http://ndc10.linkedopendata.jp/#73> a skos:Concept ;
+	skos:prefLabel "版画、印章、篆刻、印譜"@ja ;
+	skos:notation "73" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#70> .
+
+<http://ndc10.linkedopendata.jp/#74> a skos:Concept ;
+	skos:prefLabel "写真、印刷"@ja ;
+	skos:notation "74" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#70> .
+
+<http://ndc10.linkedopendata.jp/#75> a skos:Concept ;
+	skos:prefLabel "工芸"@ja ;
+	skos:notation "75" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#70> .
+
+<http://ndc10.linkedopendata.jp/#76> a skos:Concept ;
+	skos:prefLabel "音楽、舞踊、バレエ"@ja ;
+	skos:notation "76" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#70> .
+
+<http://ndc10.linkedopendata.jp/#77> a skos:Concept ;
+	skos:prefLabel "演劇、映画、大衆芸能"@ja ;
+	skos:notation "77" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#70> .
+
+<http://ndc10.linkedopendata.jp/#78> a skos:Concept ;
+	skos:prefLabel "スポーツ、体育"@ja ;
+	skos:notation "78" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#7> .
+
+<http://ndc10.linkedopendata.jp/#79> a skos:Concept ;
+	skos:prefLabel "諸芸、娯楽"@ja ;
+	skos:notation "79" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#7> .
+
+<http://ndc10.linkedopendata.jp/#80> a skos:Concept ;
+	skos:prefLabel "言語"@ja ;
+	skos:notation "80" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#8> .
+
+<http://ndc10.linkedopendata.jp/#81> a skos:Concept ;
+	skos:prefLabel "日本語"@ja ;
+	skos:notation "81" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#80> .
+
+<http://ndc10.linkedopendata.jp/#82> a skos:Concept ;
+	skos:prefLabel "中国語、その他の東洋の諸言語"@ja ;
+	skos:notation "82" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#80> .
+
+<http://ndc10.linkedopendata.jp/#83> a skos:Concept ;
+	skos:prefLabel "英語"@ja ;
+	skos:notation "83" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#80> .
+
+<http://ndc10.linkedopendata.jp/#84> a skos:Concept ;
+	skos:prefLabel "ドイツ語、その他のゲルマン諸語"@ja ;
+	skos:notation "84" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#80> .
+
+<http://ndc10.linkedopendata.jp/#85> a skos:Concept ;
+	skos:prefLabel "フランス語、プロバンス語"@ja ;
+	skos:notation "85" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#80> .
+
+<http://ndc10.linkedopendata.jp/#86> a skos:Concept ;
+	skos:prefLabel "スペイン語、ポルトガル語"@ja ;
+	skos:notation "86" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#80> .
+
+<http://ndc10.linkedopendata.jp/#87> a skos:Concept ;
+	skos:prefLabel "イタリア語、その他のロマンス諸語"@ja ;
+	skos:notation "87" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#80> .
+
+<http://ndc10.linkedopendata.jp/#88> a skos:Concept ;
+	skos:prefLabel "ロシア語、その他のスラブ諸語"@ja ;
+	skos:notation "88" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#80> .
+
+<http://ndc10.linkedopendata.jp/#89> a skos:Concept ;
+	skos:prefLabel "その他の諸言語"@ja ;
+	skos:notation "89" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#80> .
+
+<http://ndc10.linkedopendata.jp/#90> a skos:Concept ;
+	skos:prefLabel "文学"@ja ;
+	skos:notation "90" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#9> .
+
+<http://ndc10.linkedopendata.jp/#91> a skos:Concept ;
+	skos:prefLabel "日本文学"@ja ;
+	skos:notation "91" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#90> .
+
+<http://ndc10.linkedopendata.jp/#92> a skos:Concept ;
+	skos:prefLabel "中国文学、その他の東洋文学"@ja ;
+	skos:notation "92" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#90> .
+
+<http://ndc10.linkedopendata.jp/#93> a skos:Concept ;
+	skos:prefLabel "英米文学"@ja ;
+	skos:notation "93" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#90> .
+
+<http://ndc10.linkedopendata.jp/#94> a skos:Concept ;
+	skos:prefLabel "ドイツ文学、その他のゲルマン文学"@ja ;
+	skos:notation "94" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#90> .
+
+<http://ndc10.linkedopendata.jp/#95> a skos:Concept ;
+	skos:prefLabel "フランス文学、プロバンス文学"@ja ;
+	skos:notation "95" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#90> .
+
+<http://ndc10.linkedopendata.jp/#96> a skos:Concept ;
+	skos:prefLabel "スペイン文学、ポルトガル文学"@ja ;
+	skos:notation "96" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#90> .
+
+<http://ndc10.linkedopendata.jp/#97> a skos:Concept ;
+	skos:prefLabel "イタリア文学、その他のロマンス文学"@ja ;
+	skos:notation "97" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#90> .
+
+<http://ndc10.linkedopendata.jp/#98> a skos:Concept ;
+	skos:prefLabel "ロシア・ソビエト文学、その他のスラブ文学"@ja ;
+	skos:notation "98" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#90> .
+
+<http://ndc10.linkedopendata.jp/#99> a skos:Concept ;
+	skos:prefLabel "その他の諸言語文学"@ja ;
+	skos:notation "99" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#90> .
+
+<http://ndc10.linkedopendata.jp/#000> a skos:Concept ;
+	skos:prefLabel "総記"@ja ;
+	skos:notation "000" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#00> .
+
+<http://ndc10.linkedopendata.jp/#002> a skos:Concept ;
+	skos:prefLabel "知識、学問、学術"@ja ;
+	skos:notation "002" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#000> .
+
+<http://ndc10.linkedopendata.jp/#007> a skos:Concept ;
+	skos:prefLabel "情報学、情報科学"@ja ;
+	skos:notation "007" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#000> .
+
+<http://ndc10.linkedopendata.jp/#010> a skos:Concept ;
+	skos:prefLabel "図書館、図書館情報学"@ja ;
+	skos:notation "010" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#01> .
+
+<http://ndc10.linkedopendata.jp/#011> a skos:Concept ;
+	skos:prefLabel "図書館政策、図書館行財政"@ja ;
+	skos:notation "011" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#010> .
+
+<http://ndc10.linkedopendata.jp/#012> a skos:Concept ;
+	skos:prefLabel "図書館建築、図書館設備"@ja ;
+	skos:notation "012" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#010> .
+
+<http://ndc10.linkedopendata.jp/#013> a skos:Concept ;
+	skos:prefLabel "図書館経営・管理"@ja ;
+	skos:notation "013" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#010> .
+
+<http://ndc10.linkedopendata.jp/#014> a skos:Concept ;
+	skos:prefLabel "情報資料の収集・組織化・保存"@ja ;
+	skos:notation "014" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#010> .
+
+<http://ndc10.linkedopendata.jp/#015> a skos:Concept ;
+	skos:prefLabel "図書館サービス、図書館活動"@ja ;
+	skos:notation "015" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#010> .
+
+<http://ndc10.linkedopendata.jp/#016> a skos:Concept ;
+	skos:prefLabel "各種の図書館"@ja ;
+	skos:notation "016" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#010> .
+
+<http://ndc10.linkedopendata.jp/#017> a skos:Concept ;
+	skos:prefLabel "学校図書館"@ja ;
+	skos:notation "017" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#016> .
+
+<http://ndc10.linkedopendata.jp/#018> a skos:Concept ;
+	skos:prefLabel "専門図書館"@ja ;
+	skos:notation "018" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#016> .
+
+<http://ndc10.linkedopendata.jp/#019> a skos:Concept ;
+	skos:prefLabel "読書、読書法"@ja ;
+	skos:notation "019" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#010> .
+
+<http://ndc10.linkedopendata.jp/#020> a skos:Concept ;
+	skos:prefLabel "図書、書誌学"@ja ;
+	skos:notation "020" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#02> .
+
+<http://ndc10.linkedopendata.jp/#021> a skos:Concept ;
+	skos:prefLabel "著作、編集"@ja ;
+	skos:notation "021" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#020> .
+
+<http://ndc10.linkedopendata.jp/#022> a skos:Concept ;
+	skos:prefLabel "写本、刊本、造本"@ja ;
+	skos:notation "022" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#020> .
+
+<http://ndc10.linkedopendata.jp/#023> a skos:Concept ;
+	skos:prefLabel "出版"@ja ;
+	skos:notation "023" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#020> .
+
+<http://ndc10.linkedopendata.jp/#024> a skos:Concept ;
+	skos:prefLabel "図書の販売"@ja ;
+	skos:notation "024" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#020> .
+
+<http://ndc10.linkedopendata.jp/#025> a skos:Concept ;
+	skos:prefLabel "一般書誌、全国書誌"@ja ;
+	skos:notation "025" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#020> .
+
+<http://ndc10.linkedopendata.jp/#026> a skos:Concept ;
+	skos:prefLabel "稀書目録、善本目録"@ja ;
+	skos:notation "026" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#020> .
+
+<http://ndc10.linkedopendata.jp/#027> a skos:Concept ;
+	skos:prefLabel "特種目録"@ja ;
+	skos:notation "027" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#020> .
+
+<http://ndc10.linkedopendata.jp/#028> a skos:Concept ;
+	skos:prefLabel "選定図書目録、参考図書目録"@ja ;
+	skos:notation "028" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#020> .
+
+<http://ndc10.linkedopendata.jp/#029> a skos:Concept ;
+	skos:prefLabel "蔵書目録、総合目録"@ja ;
+	skos:notation "029" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#020> .
+
+<http://ndc10.linkedopendata.jp/#030> a skos:Concept ;
+	skos:prefLabel "百科事典"@ja ;
+	skos:notation "030" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#03> .
+
+<http://ndc10.linkedopendata.jp/#031> a skos:Concept ;
+	skos:prefLabel "日本語"@ja ;
+	skos:notation "031" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#030> .
+
+<http://ndc10.linkedopendata.jp/#032> a skos:Concept ;
+	skos:prefLabel "中国語"@ja ;
+	skos:notation "032" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#030> .
+
+<http://ndc10.linkedopendata.jp/#033> a skos:Concept ;
+	skos:prefLabel "英語"@ja ;
+	skos:notation "033" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#030> .
+
+<http://ndc10.linkedopendata.jp/#034> a skos:Concept ;
+	skos:prefLabel "ドイツ語"@ja ;
+	skos:notation "034" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#030> .
+
+<http://ndc10.linkedopendata.jp/#035> a skos:Concept ;
+	skos:prefLabel "フランス語"@ja ;
+	skos:notation "035" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#030> .
+
+<http://ndc10.linkedopendata.jp/#036> a skos:Concept ;
+	skos:prefLabel "スペイン語"@ja ;
+	skos:notation "036" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#030> .
+
+<http://ndc10.linkedopendata.jp/#037> a skos:Concept ;
+	skos:prefLabel "イタリア語"@ja ;
+	skos:notation "037" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#030> .
+
+<http://ndc10.linkedopendata.jp/#038> a skos:Concept ;
+	skos:prefLabel "ロシア語"@ja ;
+	skos:notation "038" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#030> .
+
+<http://ndc10.linkedopendata.jp/#039> a skos:Concept ;
+	skos:prefLabel "用語索引"@ja ;
+	skos:notation "039" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#03> .
+
+<http://ndc10.linkedopendata.jp/#040> a skos:Concept ;
+	skos:prefLabel "一般論文集、一般講演集"@ja ;
+	skos:notation "040" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#04> .
+
+<http://ndc10.linkedopendata.jp/#041> a skos:Concept ;
+	skos:prefLabel "日本語"@ja ;
+	skos:notation "041" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#040> .
+
+<http://ndc10.linkedopendata.jp/#042> a skos:Concept ;
+	skos:prefLabel "中国語"@ja ;
+	skos:notation "042" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#040> .
+
+<http://ndc10.linkedopendata.jp/#043> a skos:Concept ;
+	skos:prefLabel "英語"@ja ;
+	skos:notation "043" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#040> .
+
+<http://ndc10.linkedopendata.jp/#044> a skos:Concept ;
+	skos:prefLabel "ドイツ語"@ja ;
+	skos:notation "044" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#040> .
+
+<http://ndc10.linkedopendata.jp/#045> a skos:Concept ;
+	skos:prefLabel "フランス語"@ja ;
+	skos:notation "045" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#040> .
+
+<http://ndc10.linkedopendata.jp/#046> a skos:Concept ;
+	skos:prefLabel "スペイン語"@ja ;
+	skos:notation "046" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#040> .
+
+<http://ndc10.linkedopendata.jp/#047> a skos:Concept ;
+	skos:prefLabel "イタリア語"@ja ;
+	skos:notation "047" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#040> .
+
+<http://ndc10.linkedopendata.jp/#048> a skos:Concept ;
+	skos:prefLabel "ロシア語"@ja ;
+	skos:notation "048" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#040> .
+
+<http://ndc10.linkedopendata.jp/#049> a skos:Concept ;
+	skos:prefLabel "雑著"@ja ;
+	skos:notation "049" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#04> .
+
+<http://ndc10.linkedopendata.jp/#050> a skos:Concept ;
+	skos:prefLabel "逐次刊行物"@ja ;
+	skos:notation "050" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#05> .
+
+<http://ndc10.linkedopendata.jp/#051> a skos:Concept ;
+	skos:prefLabel "日本の雑誌"@ja ;
+	skos:notation "051" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#050> .
+
+<http://ndc10.linkedopendata.jp/#052> a skos:Concept ;
+	skos:prefLabel "中国語"@ja ;
+	skos:notation "052" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#050> .
+
+<http://ndc10.linkedopendata.jp/#053> a skos:Concept ;
+	skos:prefLabel "英語"@ja ;
+	skos:notation "053" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#050> .
+
+<http://ndc10.linkedopendata.jp/#054> a skos:Concept ;
+	skos:prefLabel "ドイツ語"@ja ;
+	skos:notation "054" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#050> .
+
+<http://ndc10.linkedopendata.jp/#055> a skos:Concept ;
+	skos:prefLabel "フランス語"@ja ;
+	skos:notation "055" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#050> .
+
+<http://ndc10.linkedopendata.jp/#056> a skos:Concept ;
+	skos:prefLabel "スペイン語"@ja ;
+	skos:notation "056" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#050> .
+
+<http://ndc10.linkedopendata.jp/#057> a skos:Concept ;
+	skos:prefLabel "イタリア語"@ja ;
+	skos:notation "057" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#050> .
+
+<http://ndc10.linkedopendata.jp/#058> a skos:Concept ;
+	skos:prefLabel "ロシア語"@ja ;
+	skos:notation "058" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#050> .
+
+<http://ndc10.linkedopendata.jp/#059> a skos:Concept ;
+	skos:prefLabel "一般年鑑"@ja ;
+	skos:notation "059" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#05> .
+
+<http://ndc10.linkedopendata.jp/#060> a skos:Concept ;
+	skos:prefLabel "団体"@ja ;
+	skos:notation "060" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#06> .
+
+<http://ndc10.linkedopendata.jp/#061> a skos:Concept ;
+	skos:prefLabel "学術・研究機関"@ja ;
+	skos:notation "061" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#060> .
+
+<http://ndc10.linkedopendata.jp/#063> a skos:Concept ;
+	skos:prefLabel "文化交流機関"@ja ;
+	skos:notation "063" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#060> .
+
+<http://ndc10.linkedopendata.jp/#065> a skos:Concept ;
+	skos:prefLabel "親睦団体、その他の団体"@ja ;
+	skos:notation "065" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#060> .
+
+<http://ndc10.linkedopendata.jp/#069> a skos:Concept ;
+	skos:prefLabel "博物館"@ja ;
+	skos:notation "069" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#06> .
+
+<http://ndc10.linkedopendata.jp/#070> a skos:Concept ;
+	skos:prefLabel "ジャーナリズム、新聞"@ja ;
+	skos:notation "070" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#07> .
+
+<http://ndc10.linkedopendata.jp/#071> a skos:Concept ;
+	skos:prefLabel "日本"@ja ;
+	skos:notation "071" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#070> .
+
+<http://ndc10.linkedopendata.jp/#072> a skos:Concept ;
+	skos:prefLabel "アジア"@ja ;
+	skos:notation "072" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#070> .
+
+<http://ndc10.linkedopendata.jp/#073> a skos:Concept ;
+	skos:prefLabel "ヨーロッパ"@ja ;
+	skos:notation "073" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#070> .
+
+<http://ndc10.linkedopendata.jp/#074> a skos:Concept ;
+	skos:prefLabel "アフリカ"@ja ;
+	skos:notation "074" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#070> .
+
+<http://ndc10.linkedopendata.jp/#075> a skos:Concept ;
+	skos:prefLabel "北アメリカ"@ja ;
+	skos:notation "075" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#070> .
+
+<http://ndc10.linkedopendata.jp/#076> a skos:Concept ;
+	skos:prefLabel "南アメリカ"@ja ;
+	skos:notation "076" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#070> .
+
+<http://ndc10.linkedopendata.jp/#077> a skos:Concept ;
+	skos:prefLabel "オセアニア、両極地方"@ja ;
+	skos:notation "077" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#070> .
+
+<http://ndc10.linkedopendata.jp/#080> a skos:Concept ;
+	skos:prefLabel "叢書、全集、選集"@ja ;
+	skos:notation "080" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#08> .
+
+<http://ndc10.linkedopendata.jp/#081> a skos:Concept ;
+	skos:prefLabel "日本語"@ja ;
+	skos:notation "081" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#080> .
+
+<http://ndc10.linkedopendata.jp/#082> a skos:Concept ;
+	skos:prefLabel "中国語"@ja ;
+	skos:notation "082" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#080> .
+
+<http://ndc10.linkedopendata.jp/#083> a skos:Concept ;
+	skos:prefLabel "英語"@ja ;
+	skos:notation "083" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#080> .
+
+<http://ndc10.linkedopendata.jp/#084> a skos:Concept ;
+	skos:prefLabel "ドイツ語"@ja ;
+	skos:notation "084" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#080> .
+
+<http://ndc10.linkedopendata.jp/#085> a skos:Concept ;
+	skos:prefLabel "フランス語"@ja ;
+	skos:notation "085" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#080> .
+
+<http://ndc10.linkedopendata.jp/#086> a skos:Concept ;
+	skos:prefLabel "スペイン語"@ja ;
+	skos:notation "086" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#080> .
+
+<http://ndc10.linkedopendata.jp/#087> a skos:Concept ;
+	skos:prefLabel "イタリア語"@ja ;
+	skos:notation "087" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#080> .
+
+<http://ndc10.linkedopendata.jp/#088> a skos:Concept ;
+	skos:prefLabel "ロシア語"@ja ;
+	skos:notation "088" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#080> .
+
+<http://ndc10.linkedopendata.jp/#089> a skos:Concept ;
+	skos:prefLabel "その他の諸言語"@ja ;
+	skos:notation "089" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#080> .
+
+<http://ndc10.linkedopendata.jp/#090> a skos:Concept ;
+	skos:prefLabel "貴重書、郷土資料、その他の特別コレクション"@ja ;
+	skos:notation "090" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#09> .
+
+<http://ndc10.linkedopendata.jp/#100> a skos:Concept ;
+	skos:prefLabel "哲学"@ja ;
+	skos:notation "100" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#10> .
+
+<http://ndc10.linkedopendata.jp/#101> a skos:Concept ;
+	skos:prefLabel "哲学理論"@ja ;
+	skos:notation "101" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#100> .
+
+<http://ndc10.linkedopendata.jp/#102> a skos:Concept ;
+	skos:prefLabel "哲学史"@ja ;
+	skos:notation "102" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#100> .
+
+<http://ndc10.linkedopendata.jp/#103> a skos:Concept ;
+	skos:prefLabel "参考図書（レファレンスブック）"@ja ;
+	skos:notation "103" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#100> .
+
+<http://ndc10.linkedopendata.jp/#104> a skos:Concept ;
+	skos:prefLabel "論文集、評論集、講演集"@ja ;
+	skos:notation "104" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#100> .
+
+<http://ndc10.linkedopendata.jp/#105> a skos:Concept ;
+	skos:prefLabel "逐次刊行物"@ja ;
+	skos:notation "105" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#100> .
+
+<http://ndc10.linkedopendata.jp/#106> a skos:Concept ;
+	skos:prefLabel "団体"@ja ;
+	skos:notation "106" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#100> .
+
+<http://ndc10.linkedopendata.jp/#107> a skos:Concept ;
+	skos:prefLabel "研究法、指導法、哲学教育"@ja ;
+	skos:notation "107" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#100> .
+
+<http://ndc10.linkedopendata.jp/#108> a skos:Concept ;
+	skos:prefLabel "叢書、全集、選集"@ja ;
+	skos:notation "108" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#100> .
+
+<http://ndc10.linkedopendata.jp/#110> a skos:Concept ;
+	skos:prefLabel "哲学各論"@ja ;
+	skos:notation "110" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#11> .
+
+<http://ndc10.linkedopendata.jp/#111> a skos:Concept ;
+	skos:prefLabel "形而上学、存在論"@ja ;
+	skos:notation "111" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#110> .
+
+<http://ndc10.linkedopendata.jp/#112> a skos:Concept ;
+	skos:prefLabel "自然哲学、宇宙論"@ja ;
+	skos:notation "112" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#110> .
+
+<http://ndc10.linkedopendata.jp/#113> a skos:Concept ;
+	skos:prefLabel "人生観、世界観"@ja ;
+	skos:notation "113" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#110> .
+
+<http://ndc10.linkedopendata.jp/#114> a skos:Concept ;
+	skos:prefLabel "人間学"@ja ;
+	skos:notation "114" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#110> .
+
+<http://ndc10.linkedopendata.jp/#115> a skos:Concept ;
+	skos:prefLabel "認識論"@ja ;
+	skos:notation "115" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#110> .
+
+<http://ndc10.linkedopendata.jp/#116> a skos:Concept ;
+	skos:prefLabel "論理学、弁証法、方法論"@ja ;
+	skos:notation "116" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#110> .
+
+<http://ndc10.linkedopendata.jp/#117> a skos:Concept ;
+	skos:prefLabel "価値哲学"@ja ;
+	skos:notation "117" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#110> .
+
+<http://ndc10.linkedopendata.jp/#118> a skos:Concept ;
+	skos:prefLabel "文化哲学、技術哲学"@ja ;
+	skos:notation "118" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#110> .
+
+<http://ndc10.linkedopendata.jp/#120> a skos:Concept ;
+	skos:prefLabel "東洋思想"@ja ;
+	skos:notation "120" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#12> .
+
+<http://ndc10.linkedopendata.jp/#121> a skos:Concept ;
+	skos:prefLabel "日本思想"@ja ;
+	skos:notation "121" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#120> .
+
+<http://ndc10.linkedopendata.jp/#122> a skos:Concept ;
+	skos:prefLabel "中国思想、中国哲学"@ja ;
+	skos:notation "122" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#120> .
+
+<http://ndc10.linkedopendata.jp/#123> a skos:Concept ;
+	skos:prefLabel "経書"@ja ;
+	skos:notation "123" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#122> .
+
+<http://ndc10.linkedopendata.jp/#124> a skos:Concept ;
+	skos:prefLabel "先秦思想、諸子百家"@ja ;
+	skos:notation "124" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#122> .
+
+<http://ndc10.linkedopendata.jp/#125> a skos:Concept ;
+	skos:prefLabel "中世思想、近代思想"@ja ;
+	skos:notation "125" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#122> .
+
+<http://ndc10.linkedopendata.jp/#126> a skos:Concept ;
+	skos:prefLabel "インド哲学、バラモン教"@ja ;
+	skos:notation "126" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#120> .
+
+<http://ndc10.linkedopendata.jp/#129> a skos:Concept ;
+	skos:prefLabel "その他の東洋思想、アジア哲学"@ja ;
+	skos:notation "129" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#120> .
+
+<http://ndc10.linkedopendata.jp/#130> a skos:Concept ;
+	skos:prefLabel "西洋哲学"@ja ;
+	skos:notation "130" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#13> .
+
+<http://ndc10.linkedopendata.jp/#131> a skos:Concept ;
+	skos:prefLabel "古代哲学"@ja ;
+	skos:notation "131" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#130> .
+
+<http://ndc10.linkedopendata.jp/#132> a skos:Concept ;
+	skos:prefLabel "中世哲学"@ja ;
+	skos:notation "132" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#130> .
+
+<http://ndc10.linkedopendata.jp/#133> a skos:Concept ;
+	skos:prefLabel "近代哲学"@ja ;
+	skos:notation "133" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#130> .
+
+<http://ndc10.linkedopendata.jp/#134> a skos:Concept ;
+	skos:prefLabel "ドイツ・オーストリア哲学"@ja ;
+	skos:notation "134" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#133> .
+
+<http://ndc10.linkedopendata.jp/#135> a skos:Concept ;
+	skos:prefLabel "フランス・オランダ哲学"@ja ;
+	skos:notation "135" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#133> .
+
+<http://ndc10.linkedopendata.jp/#136> a skos:Concept ;
+	skos:prefLabel "スペイン・ポルトガル哲学"@ja ;
+	skos:notation "136" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#133> .
+
+<http://ndc10.linkedopendata.jp/#137> a skos:Concept ;
+	skos:prefLabel "イタリア哲学"@ja ;
+	skos:notation "137" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#133> .
+
+<http://ndc10.linkedopendata.jp/#138> a skos:Concept ;
+	skos:prefLabel "ロシア哲学"@ja ;
+	skos:notation "138" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#133> .
+
+<http://ndc10.linkedopendata.jp/#139> a skos:Concept ;
+	skos:prefLabel "その他の哲学"@ja ;
+	skos:notation "139" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#133> .
+
+<http://ndc10.linkedopendata.jp/#140> a skos:Concept ;
+	skos:prefLabel "心理学"@ja ;
+	skos:notation "140" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#14> .
+
+<http://ndc10.linkedopendata.jp/#141> a skos:Concept ;
+	skos:prefLabel "普通心理学、心理各論"@ja ;
+	skos:notation "141" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#140> .
+
+<http://ndc10.linkedopendata.jp/#143> a skos:Concept ;
+	skos:prefLabel "発達心理学"@ja ;
+	skos:notation "143" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#140> .
+
+<http://ndc10.linkedopendata.jp/#145> a skos:Concept ;
+	skos:prefLabel "異常心理学"@ja ;
+	skos:notation "145" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#140> .
+
+<http://ndc10.linkedopendata.jp/#146> a skos:Concept ;
+	skos:prefLabel "臨床心理学、精神分析学"@ja ;
+	skos:notation "146" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#140> .
+
+<http://ndc10.linkedopendata.jp/#147> a skos:Concept ;
+	skos:prefLabel "超心理学、心霊研究"@ja ;
+	skos:notation "147" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#140> .
+
+<http://ndc10.linkedopendata.jp/#148> a skos:Concept ;
+	skos:prefLabel "相法、易占"@ja ;
+	skos:notation "148" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#140> .
+
+<http://ndc10.linkedopendata.jp/#150> a skos:Concept ;
+	skos:prefLabel "倫理学、道徳"@ja ;
+	skos:notation "150" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#15> .
+
+<http://ndc10.linkedopendata.jp/#151> a skos:Concept ;
+	skos:prefLabel "倫理各論"@ja ;
+	skos:notation "151" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#150> .
+
+<http://ndc10.linkedopendata.jp/#152> a skos:Concept ;
+	skos:prefLabel "家庭倫理、性倫理"@ja ;
+	skos:notation "152" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#150> .
+
+<http://ndc10.linkedopendata.jp/#153> a skos:Concept ;
+	skos:prefLabel "職業倫理"@ja ;
+	skos:notation "153" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#150> .
+
+<http://ndc10.linkedopendata.jp/#154> a skos:Concept ;
+	skos:prefLabel "社会倫理（社会道徳）"@ja ;
+	skos:notation "154" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#150> .
+
+<http://ndc10.linkedopendata.jp/#155> a skos:Concept ;
+	skos:prefLabel "国体論、詔勅"@ja ;
+	skos:notation "155" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#150> .
+
+<http://ndc10.linkedopendata.jp/#156> a skos:Concept ;
+	skos:prefLabel "武士道"@ja ;
+	skos:notation "156" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#150> .
+
+<http://ndc10.linkedopendata.jp/#157> a skos:Concept ;
+	skos:prefLabel "報徳教、石門心学"@ja ;
+	skos:notation "157" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#150> .
+
+<http://ndc10.linkedopendata.jp/#158> a skos:Concept ;
+	skos:prefLabel "その他の特定主題"@ja ;
+	skos:notation "158" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#150> .
+
+<http://ndc10.linkedopendata.jp/#159> a skos:Concept ;
+	skos:prefLabel "人生訓、教訓"@ja ;
+	skos:notation "159" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#150> .
+
+<http://ndc10.linkedopendata.jp/#160> a skos:Concept ;
+	skos:prefLabel "宗教"@ja ;
+	skos:notation "160" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#16> .
+
+<http://ndc10.linkedopendata.jp/#161> a skos:Concept ;
+	skos:prefLabel "宗教学、宗教思想"@ja ;
+	skos:notation "161" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#160> .
+
+<http://ndc10.linkedopendata.jp/#162> a skos:Concept ;
+	skos:prefLabel "宗教史・事情"@ja ;
+	skos:notation "162" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#160> .
+
+<http://ndc10.linkedopendata.jp/#163> a skos:Concept ;
+	skos:prefLabel "原始宗教、宗教民族学"@ja ;
+	skos:notation "163" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#160> .
+
+<http://ndc10.linkedopendata.jp/#164> a skos:Concept ;
+	skos:prefLabel "神話、神話学"@ja ;
+	skos:notation "164" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#160> .
+
+<http://ndc10.linkedopendata.jp/#165> a skos:Concept ;
+	skos:prefLabel "比較宗教"@ja ;
+	skos:notation "165" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#160> .
+
+<http://ndc10.linkedopendata.jp/#166> a skos:Concept ;
+	skos:prefLabel "道教"@ja ;
+	skos:notation "166" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#160> .
+
+<http://ndc10.linkedopendata.jp/#167> a skos:Concept ;
+	skos:prefLabel "イスラム"@ja ;
+	skos:notation "167" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#160> .
+
+<http://ndc10.linkedopendata.jp/#168> a skos:Concept ;
+	skos:prefLabel "ヒンズー教、ジャイナ教"@ja ;
+	skos:notation "168" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#160> .
+
+<http://ndc10.linkedopendata.jp/#169> a skos:Concept ;
+	skos:prefLabel "その他の宗教、新興宗教"@ja ;
+	skos:notation "169" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#160> .
+
+<http://ndc10.linkedopendata.jp/#170> a skos:Concept ;
+	skos:prefLabel "神道"@ja ;
+	skos:notation "170" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#17> .
+
+<http://ndc10.linkedopendata.jp/#171> a skos:Concept ;
+	skos:prefLabel "神道思想、神道説"@ja ;
+	skos:notation "171" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#170> .
+
+<http://ndc10.linkedopendata.jp/#172> a skos:Concept ;
+	skos:prefLabel "神祇・神道史"@ja ;
+	skos:notation "172" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#170> .
+
+<http://ndc10.linkedopendata.jp/#173> a skos:Concept ;
+	skos:prefLabel "神典"@ja ;
+	skos:notation "173" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#170> .
+
+<http://ndc10.linkedopendata.jp/#174> a skos:Concept ;
+	skos:prefLabel "信仰録、説教集"@ja ;
+	skos:notation "174" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#170> .
+
+<http://ndc10.linkedopendata.jp/#175> a skos:Concept ;
+	skos:prefLabel "神社、神職"@ja ;
+	skos:notation "175" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#170> .
+
+<http://ndc10.linkedopendata.jp/#176> a skos:Concept ;
+	skos:prefLabel "祭祀"@ja ;
+	skos:notation "176" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#170> .
+
+<http://ndc10.linkedopendata.jp/#177> a skos:Concept ;
+	skos:prefLabel "布教、伝道"@ja ;
+	skos:notation "177" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#170> .
+
+<http://ndc10.linkedopendata.jp/#178> a skos:Concept ;
+	skos:prefLabel "各教派、教派神道"@ja ;
+	skos:notation "178" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#170> .
+
+<http://ndc10.linkedopendata.jp/#180> a skos:Concept ;
+	skos:prefLabel "仏教"@ja ;
+	skos:notation "180" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#18> .
+
+<http://ndc10.linkedopendata.jp/#181> a skos:Concept ;
+	skos:prefLabel "仏教教理、仏教哲学"@ja ;
+	skos:notation "181" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#180> .
+
+<http://ndc10.linkedopendata.jp/#182> a skos:Concept ;
+	skos:prefLabel "仏教史"@ja ;
+	skos:notation "182" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#180> .
+
+<http://ndc10.linkedopendata.jp/#183> a skos:Concept ;
+	skos:prefLabel "経典"@ja ;
+	skos:notation "183" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#180> .
+
+<http://ndc10.linkedopendata.jp/#184> a skos:Concept ;
+	skos:prefLabel "法話・説教集"@ja ;
+	skos:notation "184" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#180> .
+
+<http://ndc10.linkedopendata.jp/#185> a skos:Concept ;
+	skos:prefLabel "寺院、僧職"@ja ;
+	skos:notation "185" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#180> .
+
+<http://ndc10.linkedopendata.jp/#186> a skos:Concept ;
+	skos:prefLabel "仏会"@ja ;
+	skos:notation "186" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#180> .
+
+<http://ndc10.linkedopendata.jp/#187> a skos:Concept ;
+	skos:prefLabel "布教、伝道"@ja ;
+	skos:notation "187" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#180> .
+
+<http://ndc10.linkedopendata.jp/#188> a skos:Concept ;
+	skos:prefLabel "各宗"@ja ;
+	skos:notation "188" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#180> .
+
+<http://ndc10.linkedopendata.jp/#190> a skos:Concept ;
+	skos:prefLabel "キリスト教"@ja ;
+	skos:notation "190" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#19> .
+
+<http://ndc10.linkedopendata.jp/#191> a skos:Concept ;
+	skos:prefLabel "教義、キリスト教神学"@ja ;
+	skos:notation "191" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#190> .
+
+<http://ndc10.linkedopendata.jp/#192> a skos:Concept ;
+	skos:prefLabel "キリスト教史、迫害史"@ja ;
+	skos:notation "192" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#190> .
+
+<http://ndc10.linkedopendata.jp/#193> a skos:Concept ;
+	skos:prefLabel "聖書"@ja ;
+	skos:notation "193" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#190> .
+
+<http://ndc10.linkedopendata.jp/#194> a skos:Concept ;
+	skos:prefLabel "信仰録、説教集"@ja ;
+	skos:notation "194" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#190> .
+
+<http://ndc10.linkedopendata.jp/#195> a skos:Concept ;
+	skos:prefLabel "教会、聖職"@ja ;
+	skos:notation "195" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#190> .
+
+<http://ndc10.linkedopendata.jp/#196> a skos:Concept ;
+	skos:prefLabel "典礼、祭式、礼拝"@ja ;
+	skos:notation "196" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#190> .
+
+<http://ndc10.linkedopendata.jp/#197> a skos:Concept ;
+	skos:prefLabel "布教、伝道"@ja ;
+	skos:notation "197" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#190> .
+
+<http://ndc10.linkedopendata.jp/#198> a skos:Concept ;
+	skos:prefLabel "各教派、教会史"@ja ;
+	skos:notation "198" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#190> .
+
+<http://ndc10.linkedopendata.jp/#199> a skos:Concept ;
+	skos:prefLabel "ユダヤ教"@ja ;
+	skos:notation "199" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#19> .
+
+<http://ndc10.linkedopendata.jp/#200> a skos:Concept ;
+	skos:prefLabel "歴史"@ja ;
+	skos:notation "200" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#20> .
+
+<http://ndc10.linkedopendata.jp/#201> a skos:Concept ;
+	skos:prefLabel "歴史学"@ja ;
+	skos:notation "201" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#200> .
+
+<http://ndc10.linkedopendata.jp/#202> a skos:Concept ;
+	skos:prefLabel "歴史補助学"@ja ;
+	skos:notation "202" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#200> .
+
+<http://ndc10.linkedopendata.jp/#203> a skos:Concept ;
+	skos:prefLabel "参考図書（レファレンスブック）"@ja ;
+	skos:notation "203" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#200> .
+
+<http://ndc10.linkedopendata.jp/#204> a skos:Concept ;
+	skos:prefLabel "論文集、評論集、講演集"@ja ;
+	skos:notation "204" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#200> .
+
+<http://ndc10.linkedopendata.jp/#205> a skos:Concept ;
+	skos:prefLabel "逐次刊行物"@ja ;
+	skos:notation "205" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#200> .
+
+<http://ndc10.linkedopendata.jp/#206> a skos:Concept ;
+	skos:prefLabel "団体"@ja ;
+	skos:notation "206" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#200> .
+
+<http://ndc10.linkedopendata.jp/#207> a skos:Concept ;
+	skos:prefLabel "研究法、指導法、歴史教育"@ja ;
+	skos:notation "207" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#200> .
+
+<http://ndc10.linkedopendata.jp/#208> a skos:Concept ;
+	skos:prefLabel "叢書、全集、選集"@ja ;
+	skos:notation "208" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#200> .
+
+<http://ndc10.linkedopendata.jp/#209> a skos:Concept ;
+	skos:prefLabel "世界史、文化史"@ja ;
+	skos:notation "209" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#20> .
+
+<http://ndc10.linkedopendata.jp/#210> a skos:Concept ;
+	skos:prefLabel "日本史"@ja ;
+	skos:notation "210" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#21> .
+
+<http://ndc10.linkedopendata.jp/#211> a skos:Concept ;
+	skos:prefLabel "北海道地方"@ja ;
+	skos:notation "211" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#210> .
+
+<http://ndc10.linkedopendata.jp/#212> a skos:Concept ;
+	skos:prefLabel "東北地方"@ja ;
+	skos:notation "212" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#210> .
+
+<http://ndc10.linkedopendata.jp/#213> a skos:Concept ;
+	skos:prefLabel "関東地方"@ja ;
+	skos:notation "213" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#210> .
+
+<http://ndc10.linkedopendata.jp/#214> a skos:Concept ;
+	skos:prefLabel "北陸地方"@ja ;
+	skos:notation "214" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#210> .
+
+<http://ndc10.linkedopendata.jp/#215> a skos:Concept ;
+	skos:prefLabel "中部地方"@ja ;
+	skos:notation "215" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#210> .
+
+<http://ndc10.linkedopendata.jp/#216> a skos:Concept ;
+	skos:prefLabel "近畿地方"@ja ;
+	skos:notation "216" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#210> .
+
+<http://ndc10.linkedopendata.jp/#217> a skos:Concept ;
+	skos:prefLabel "中国地方"@ja ;
+	skos:notation "217" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#210> .
+
+<http://ndc10.linkedopendata.jp/#218> a skos:Concept ;
+	skos:prefLabel "四国地方"@ja ;
+	skos:notation "218" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#210> .
+
+<http://ndc10.linkedopendata.jp/#219> a skos:Concept ;
+	skos:prefLabel "九州地方"@ja ;
+	skos:notation "219" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#210> .
+
+<http://ndc10.linkedopendata.jp/#220> a skos:Concept ;
+	skos:prefLabel "アジア史、東洋史"@ja ;
+	skos:notation "220" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#22> .
+
+<http://ndc10.linkedopendata.jp/#221> a skos:Concept ;
+	skos:prefLabel "朝鮮"@ja ;
+	skos:notation "221" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#220> .
+
+<http://ndc10.linkedopendata.jp/#222> a skos:Concept ;
+	skos:prefLabel "中国"@ja ;
+	skos:notation "222" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#220> .
+
+<http://ndc10.linkedopendata.jp/#223> a skos:Concept ;
+	skos:prefLabel "東南アジア"@ja ;
+	skos:notation "223" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#220> .
+
+<http://ndc10.linkedopendata.jp/#224> a skos:Concept ;
+	skos:prefLabel "インドネシア"@ja ;
+	skos:notation "224" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#223> .
+
+<http://ndc10.linkedopendata.jp/#225> a skos:Concept ;
+	skos:prefLabel "インド"@ja ;
+	skos:notation "225" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#220> .
+
+<http://ndc10.linkedopendata.jp/#227> a skos:Concept ;
+	skos:prefLabel "西南アジア、中東（中近東）"@ja ;
+	skos:notation "227" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#220> .
+
+<http://ndc10.linkedopendata.jp/#229> a skos:Concept ;
+	skos:prefLabel "アジアロシア"@ja ;
+	skos:notation "229" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#220> .
+
+<http://ndc10.linkedopendata.jp/#230> a skos:Concept ;
+	skos:prefLabel "ヨーロッパ史、西洋史"@ja ;
+	skos:notation "230" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#23> .
+
+<http://ndc10.linkedopendata.jp/#231> a skos:Concept ;
+	skos:prefLabel "古代ギリシア"@ja ;
+	skos:notation "231" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#230> .
+
+<http://ndc10.linkedopendata.jp/#232> a skos:Concept ;
+	skos:prefLabel "古代ローマ"@ja ;
+	skos:notation "232" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#230> .
+
+<http://ndc10.linkedopendata.jp/#233> a skos:Concept ;
+	skos:prefLabel "イギリス、英国"@ja ;
+	skos:notation "233" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#230> .
+
+<http://ndc10.linkedopendata.jp/#234> a skos:Concept ;
+	skos:prefLabel "ドイツ、中欧"@ja ;
+	skos:notation "234" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#230> .
+
+<http://ndc10.linkedopendata.jp/#235> a skos:Concept ;
+	skos:prefLabel "フランス"@ja ;
+	skos:notation "235" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#230> .
+
+<http://ndc10.linkedopendata.jp/#236> a skos:Concept ;
+	skos:prefLabel "スペイン（イスパニア）"@ja ;
+	skos:notation "236" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#230> .
+
+<http://ndc10.linkedopendata.jp/#237> a skos:Concept ;
+	skos:prefLabel "イタリア"@ja ;
+	skos:notation "237" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#230> .
+
+<http://ndc10.linkedopendata.jp/#238> a skos:Concept ;
+	skos:prefLabel "ロシア"@ja ;
+	skos:notation "238" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#230> .
+
+<http://ndc10.linkedopendata.jp/#239> a skos:Concept ;
+	skos:prefLabel "バルカン諸国"@ja ;
+	skos:notation "239" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#230> .
+
+<http://ndc10.linkedopendata.jp/#240> a skos:Concept ;
+	skos:prefLabel "アフリカ史"@ja ;
+	skos:notation "240" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#24> .
+
+<http://ndc10.linkedopendata.jp/#241> a skos:Concept ;
+	skos:prefLabel "北アフリカ"@ja ;
+	skos:notation "241" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#240> .
+
+<http://ndc10.linkedopendata.jp/#242> a skos:Concept ;
+	skos:prefLabel "エジプト"@ja ;
+	skos:notation "242" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#241> .
+
+<http://ndc10.linkedopendata.jp/#243> a skos:Concept ;
+	skos:prefLabel "マグレブ諸国"@ja ;
+	skos:notation "243" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#242> .
+
+<http://ndc10.linkedopendata.jp/#244> a skos:Concept ;
+	skos:prefLabel "西アフリカ"@ja ;
+	skos:notation "244" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#240> .
+
+<http://ndc10.linkedopendata.jp/#245> a skos:Concept ;
+	skos:prefLabel "東アフリカ"@ja ;
+	skos:notation "245" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#240> .
+
+<http://ndc10.linkedopendata.jp/#248> a skos:Concept ;
+	skos:prefLabel "南アフリカ"@ja ;
+	skos:notation "248" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#240> .
+
+<http://ndc10.linkedopendata.jp/#249> a skos:Concept ;
+	skos:prefLabel "インド洋のアフリカ諸島"@ja ;
+	skos:notation "249" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#240> .
+
+<http://ndc10.linkedopendata.jp/#250> a skos:Concept ;
+	skos:prefLabel "北アメリカ史"@ja ;
+	skos:notation "250" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#25> .
+
+<http://ndc10.linkedopendata.jp/#251> a skos:Concept ;
+	skos:prefLabel "カナダ"@ja ;
+	skos:notation "251" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#250> .
+
+<http://ndc10.linkedopendata.jp/#253> a skos:Concept ;
+	skos:prefLabel "アメリカ合衆国"@ja ;
+	skos:notation "253" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#250> .
+
+<http://ndc10.linkedopendata.jp/#255> a skos:Concept ;
+	skos:prefLabel "ラテンアメリカ（中南米）"@ja ;
+	skos:notation "255" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#250> .
+
+<http://ndc10.linkedopendata.jp/#256> a skos:Concept ;
+	skos:prefLabel "メキシコ"@ja ;
+	skos:notation "256" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#255> .
+
+<http://ndc10.linkedopendata.jp/#257> a skos:Concept ;
+	skos:prefLabel "中央アメリカ（中米諸国）"@ja ;
+	skos:notation "257" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#255> .
+
+<http://ndc10.linkedopendata.jp/#259> a skos:Concept ;
+	skos:prefLabel "西インド諸島"@ja ;
+	skos:notation "259" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#255> .
+
+<http://ndc10.linkedopendata.jp/#260> a skos:Concept ;
+	skos:prefLabel "南アメリカ史"@ja ;
+	skos:notation "260" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#26> .
+
+<http://ndc10.linkedopendata.jp/#261> a skos:Concept ;
+	skos:prefLabel "北部諸国（カリブ沿海諸国）"@ja ;
+	skos:notation "261" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#260> .
+
+<http://ndc10.linkedopendata.jp/#262> a skos:Concept ;
+	skos:prefLabel "ブラジル"@ja ;
+	skos:notation "262" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#260> .
+
+<http://ndc10.linkedopendata.jp/#263> a skos:Concept ;
+	skos:prefLabel "パラグアイ"@ja ;
+	skos:notation "263" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#260> .
+
+<http://ndc10.linkedopendata.jp/#264> a skos:Concept ;
+	skos:prefLabel "ウルグアイ"@ja ;
+	skos:notation "264" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#260> .
+
+<http://ndc10.linkedopendata.jp/#265> a skos:Concept ;
+	skos:prefLabel "アルゼンチン"@ja ;
+	skos:notation "265" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#260> .
+
+<http://ndc10.linkedopendata.jp/#266> a skos:Concept ;
+	skos:prefLabel "チリ"@ja ;
+	skos:notation "266" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#260> .
+
+<http://ndc10.linkedopendata.jp/#267> a skos:Concept ;
+	skos:prefLabel "ボリビア"@ja ;
+	skos:notation "267" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#260> .
+
+<http://ndc10.linkedopendata.jp/#268> a skos:Concept ;
+	skos:prefLabel "ペルー"@ja ;
+	skos:notation "268" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#260> .
+
+<http://ndc10.linkedopendata.jp/#270> a skos:Concept ;
+	skos:prefLabel "オセアニア史、両極地方史"@ja ;
+	skos:notation "270" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#27> .
+
+<http://ndc10.linkedopendata.jp/#271> a skos:Concept ;
+	skos:prefLabel "オーストラリア"@ja ;
+	skos:notation "271" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#270> .
+
+<http://ndc10.linkedopendata.jp/#272> a skos:Concept ;
+	skos:prefLabel "ニュージーランド"@ja ;
+	skos:notation "272" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#270> .
+
+<http://ndc10.linkedopendata.jp/#273> a skos:Concept ;
+	skos:prefLabel "メラネシア"@ja ;
+	skos:notation "273" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#270> .
+
+<http://ndc10.linkedopendata.jp/#274> a skos:Concept ;
+	skos:prefLabel "ミクロネシア"@ja ;
+	skos:notation "274" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#270> .
+
+<http://ndc10.linkedopendata.jp/#275> a skos:Concept ;
+	skos:prefLabel "ポリネシア"@ja ;
+	skos:notation "275" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#270> .
+
+<http://ndc10.linkedopendata.jp/#276> a skos:Concept ;
+	skos:prefLabel "ハワイ"@ja ;
+	skos:notation "276" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#270> .
+
+<http://ndc10.linkedopendata.jp/#277> a skos:Concept ;
+	skos:prefLabel "両極地方"@ja ;
+	skos:notation "277" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#270> .
+
+<http://ndc10.linkedopendata.jp/#278> a skos:Concept ;
+	skos:prefLabel "北極、北極地方"@ja ;
+	skos:notation "278" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#277> .
+
+<http://ndc10.linkedopendata.jp/#279> a skos:Concept ;
+	skos:prefLabel "南極、南極地方"@ja ;
+	skos:notation "279" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#277> .
+
+<http://ndc10.linkedopendata.jp/#280> a skos:Concept ;
+	skos:prefLabel "伝記"@ja ;
+	skos:notation "280" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#28> .
+
+<http://ndc10.linkedopendata.jp/#281> a skos:Concept ;
+	skos:prefLabel "日本"@ja ;
+	skos:notation "281" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#280> .
+
+<http://ndc10.linkedopendata.jp/#282> a skos:Concept ;
+	skos:prefLabel "アジア"@ja ;
+	skos:notation "282" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#280> .
+
+<http://ndc10.linkedopendata.jp/#283> a skos:Concept ;
+	skos:prefLabel "ヨーロッパ"@ja ;
+	skos:notation "283" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#280> .
+
+<http://ndc10.linkedopendata.jp/#284> a skos:Concept ;
+	skos:prefLabel "アフリカ"@ja ;
+	skos:notation "284" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#280> .
+
+<http://ndc10.linkedopendata.jp/#285> a skos:Concept ;
+	skos:prefLabel "北アメリカ"@ja ;
+	skos:notation "285" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#280> .
+
+<http://ndc10.linkedopendata.jp/#286> a skos:Concept ;
+	skos:prefLabel "南アメリカ"@ja ;
+	skos:notation "286" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#280> .
+
+<http://ndc10.linkedopendata.jp/#287> a skos:Concept ;
+	skos:prefLabel "オセアニア、両極地方"@ja ;
+	skos:notation "287" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#280> .
+
+<http://ndc10.linkedopendata.jp/#288> a skos:Concept ;
+	skos:prefLabel "系譜、家史、皇室"@ja ;
+	skos:notation "288" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#280> .
+
+<http://ndc10.linkedopendata.jp/#289> a skos:Concept ;
+	skos:prefLabel "個人伝記"@ja ;
+	skos:notation "289" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#280> .
+
+<http://ndc10.linkedopendata.jp/#290> a skos:Concept ;
+	skos:prefLabel "地理、地誌、紀行"@ja ;
+	skos:notation "290" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#29> .
+
+<http://ndc10.linkedopendata.jp/#291> a skos:Concept ;
+	skos:prefLabel "日本"@ja ;
+	skos:notation "291" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#290> .
+
+<http://ndc10.linkedopendata.jp/#292> a skos:Concept ;
+	skos:prefLabel "アジア"@ja ;
+	skos:notation "292" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#290> .
+
+<http://ndc10.linkedopendata.jp/#293> a skos:Concept ;
+	skos:prefLabel "ヨーロッパ"@ja ;
+	skos:notation "293" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#290> .
+
+<http://ndc10.linkedopendata.jp/#294> a skos:Concept ;
+	skos:prefLabel "アフリカ"@ja ;
+	skos:notation "294" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#290> .
+
+<http://ndc10.linkedopendata.jp/#295> a skos:Concept ;
+	skos:prefLabel "北アメリカ"@ja ;
+	skos:notation "295" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#290> .
+
+<http://ndc10.linkedopendata.jp/#296> a skos:Concept ;
+	skos:prefLabel "南アメリカ"@ja ;
+	skos:notation "296" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#290> .
+
+<http://ndc10.linkedopendata.jp/#297> a skos:Concept ;
+	skos:prefLabel "オセアニア、両極地方"@ja ;
+	skos:notation "297" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#290> .
+
+<http://ndc10.linkedopendata.jp/#299> a skos:Concept ;
+	skos:prefLabel "海洋"@ja ;
+	skos:notation "299" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#290> .
+
+<http://ndc10.linkedopendata.jp/#300> a skos:Concept ;
+	skos:prefLabel "社会科学"@ja ;
+	skos:notation "300" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#30> .
+
+<http://ndc10.linkedopendata.jp/#301> a skos:Concept ;
+	skos:prefLabel "理論、方法論"@ja ;
+	skos:notation "301" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#300> .
+
+<http://ndc10.linkedopendata.jp/#302> a skos:Concept ;
+	skos:prefLabel "政治・経済・社会・文化事情"@ja ;
+	skos:notation "302" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#300> .
+
+<http://ndc10.linkedopendata.jp/#303> a skos:Concept ;
+	skos:prefLabel "参考図書（レファレンスブック）"@ja ;
+	skos:notation "303" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#300> .
+
+<http://ndc10.linkedopendata.jp/#304> a skos:Concept ;
+	skos:prefLabel "論文集、評論集、講演集"@ja ;
+	skos:notation "304" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#300> .
+
+<http://ndc10.linkedopendata.jp/#305> a skos:Concept ;
+	skos:prefLabel "逐次刊行物"@ja ;
+	skos:notation "305" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#300> .
+
+<http://ndc10.linkedopendata.jp/#306> a skos:Concept ;
+	skos:prefLabel "団体"@ja ;
+	skos:notation "306" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#300> .
+
+<http://ndc10.linkedopendata.jp/#307> a skos:Concept ;
+	skos:prefLabel "研究法、指導法、社会科学教育"@ja ;
+	skos:notation "307" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#300> .
+
+<http://ndc10.linkedopendata.jp/#308> a skos:Concept ;
+	skos:prefLabel "叢書、全集、選集"@ja ;
+	skos:notation "308" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#300> .
+
+<http://ndc10.linkedopendata.jp/#309> a skos:Concept ;
+	skos:prefLabel "社会思想"@ja ;
+	skos:notation "309" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#300> .
+
+<http://ndc10.linkedopendata.jp/#310> a skos:Concept ;
+	skos:prefLabel "政治"@ja ;
+	skos:notation "310" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#31> .
+
+<http://ndc10.linkedopendata.jp/#311> a skos:Concept ;
+	skos:prefLabel "政治学、政治思想"@ja ;
+	skos:notation "311" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#310> .
+
+<http://ndc10.linkedopendata.jp/#312> a skos:Concept ;
+	skos:prefLabel "政治史・事情"@ja ;
+	skos:notation "312" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#310> .
+
+<http://ndc10.linkedopendata.jp/#313> a skos:Concept ;
+	skos:prefLabel "国家の形態、政治体制"@ja ;
+	skos:notation "313" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#310> .
+
+<http://ndc10.linkedopendata.jp/#314> a skos:Concept ;
+	skos:prefLabel "議会"@ja ;
+	skos:notation "314" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#310> .
+
+<http://ndc10.linkedopendata.jp/#315> a skos:Concept ;
+	skos:prefLabel "政党、政治結社"@ja ;
+	skos:notation "315" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#310> .
+
+<http://ndc10.linkedopendata.jp/#316> a skos:Concept ;
+	skos:prefLabel "国家と個人・宗教・民族"@ja ;
+	skos:notation "316" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#310> .
+
+<http://ndc10.linkedopendata.jp/#317> a skos:Concept ;
+	skos:prefLabel "行政"@ja ;
+	skos:notation "317" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#310> .
+
+<http://ndc10.linkedopendata.jp/#318> a skos:Concept ;
+	skos:prefLabel "地方自治、地方行政"@ja ;
+	skos:notation "318" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#310> .
+
+<http://ndc10.linkedopendata.jp/#319> a skos:Concept ;
+	skos:prefLabel "外交、国際問題"@ja ;
+	skos:notation "319" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#310> .
+
+<http://ndc10.linkedopendata.jp/#320> a skos:Concept ;
+	skos:prefLabel "法律"@ja ;
+	skos:notation "320" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#32> .
+
+<http://ndc10.linkedopendata.jp/#321> a skos:Concept ;
+	skos:prefLabel "法学"@ja ;
+	skos:notation "321" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#320> .
+
+<http://ndc10.linkedopendata.jp/#322> a skos:Concept ;
+	skos:prefLabel "法制史"@ja ;
+	skos:notation "322" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#320> .
+
+<http://ndc10.linkedopendata.jp/#323> a skos:Concept ;
+	skos:prefLabel "憲法"@ja ;
+	skos:notation "323" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#320> .
+
+<http://ndc10.linkedopendata.jp/#324> a skos:Concept ;
+	skos:prefLabel "民法、民事法"@ja ;
+	skos:notation "324" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#320> .
+
+<http://ndc10.linkedopendata.jp/#325> a skos:Concept ;
+	skos:prefLabel "商法、商事法"@ja ;
+	skos:notation "325" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#320> .
+
+<http://ndc10.linkedopendata.jp/#326> a skos:Concept ;
+	skos:prefLabel "刑法、刑事法"@ja ;
+	skos:notation "326" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#320> .
+
+<http://ndc10.linkedopendata.jp/#327> a skos:Concept ;
+	skos:prefLabel "司法、訴訟手続法"@ja ;
+	skos:notation "327" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#320> .
+
+<http://ndc10.linkedopendata.jp/#329> a skos:Concept ;
+	skos:prefLabel "国際法"@ja ;
+	skos:notation "329" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#320> .
+
+<http://ndc10.linkedopendata.jp/#330> a skos:Concept ;
+	skos:prefLabel "経済"@ja ;
+	skos:notation "330" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#33> .
+
+<http://ndc10.linkedopendata.jp/#331> a skos:Concept ;
+	skos:prefLabel "経済学、経済思想"@ja ;
+	skos:notation "331" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#330> .
+
+<http://ndc10.linkedopendata.jp/#332> a skos:Concept ;
+	skos:prefLabel "経済史・事情、経済体制"@ja ;
+	skos:notation "332" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#330> .
+
+<http://ndc10.linkedopendata.jp/#333> a skos:Concept ;
+	skos:prefLabel "経済政策、国際経済"@ja ;
+	skos:notation "333" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#330> .
+
+<http://ndc10.linkedopendata.jp/#334> a skos:Concept ;
+	skos:prefLabel "人口、土地、資源"@ja ;
+	skos:notation "334" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#330> .
+
+<http://ndc10.linkedopendata.jp/#335> a skos:Concept ;
+	skos:prefLabel "企業、経営"@ja ;
+	skos:notation "335" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#330> .
+
+<http://ndc10.linkedopendata.jp/#336> a skos:Concept ;
+	skos:prefLabel "経営管理"@ja ;
+	skos:notation "336" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#335> .
+
+<http://ndc10.linkedopendata.jp/#337> a skos:Concept ;
+	skos:prefLabel "貨幣、通貨"@ja ;
+	skos:notation "337" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#330> .
+
+<http://ndc10.linkedopendata.jp/#338> a skos:Concept ;
+	skos:prefLabel "金融、銀行、信託"@ja ;
+	skos:notation "338" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#330> .
+
+<http://ndc10.linkedopendata.jp/#339> a skos:Concept ;
+	skos:prefLabel "保険"@ja ;
+	skos:notation "339" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#330> .
+
+<http://ndc10.linkedopendata.jp/#340> a skos:Concept ;
+	skos:prefLabel "財政"@ja ;
+	skos:notation "340" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#34> .
+
+<http://ndc10.linkedopendata.jp/#341> a skos:Concept ;
+	skos:prefLabel "財政学、財政思想"@ja ;
+	skos:notation "341" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#340> .
+
+<http://ndc10.linkedopendata.jp/#342> a skos:Concept ;
+	skos:prefLabel "財政史・事情"@ja ;
+	skos:notation "342" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#340> .
+
+<http://ndc10.linkedopendata.jp/#343> a skos:Concept ;
+	skos:prefLabel "財政政策、財務行政"@ja ;
+	skos:notation "343" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#340> .
+
+<http://ndc10.linkedopendata.jp/#344> a skos:Concept ;
+	skos:prefLabel "予算、決算"@ja ;
+	skos:notation "344" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#340> .
+
+<http://ndc10.linkedopendata.jp/#345> a skos:Concept ;
+	skos:prefLabel "租税"@ja ;
+	skos:notation "345" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#340> .
+
+<http://ndc10.linkedopendata.jp/#347> a skos:Concept ;
+	skos:prefLabel "公債、国債"@ja ;
+	skos:notation "347" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#340> .
+
+<http://ndc10.linkedopendata.jp/#348> a skos:Concept ;
+	skos:prefLabel "専売、国有財産"@ja ;
+	skos:notation "348" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#340> .
+
+<http://ndc10.linkedopendata.jp/#349> a skos:Concept ;
+	skos:prefLabel "地方財政"@ja ;
+	skos:notation "349" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#340> .
+
+<http://ndc10.linkedopendata.jp/#350> a skos:Concept ;
+	skos:prefLabel "統計"@ja ;
+	skos:notation "350" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#35> .
+
+<http://ndc10.linkedopendata.jp/#351> a skos:Concept ;
+	skos:prefLabel "日本"@ja ;
+	skos:notation "351" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#350> .
+
+<http://ndc10.linkedopendata.jp/#352> a skos:Concept ;
+	skos:prefLabel "アジア"@ja ;
+	skos:notation "352" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#350> .
+
+<http://ndc10.linkedopendata.jp/#353> a skos:Concept ;
+	skos:prefLabel "ヨーロッパ"@ja ;
+	skos:notation "353" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#350> .
+
+<http://ndc10.linkedopendata.jp/#354> a skos:Concept ;
+	skos:prefLabel "アフリカ"@ja ;
+	skos:notation "354" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#350> .
+
+<http://ndc10.linkedopendata.jp/#355> a skos:Concept ;
+	skos:prefLabel "北アメリカ"@ja ;
+	skos:notation "355" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#350> .
+
+<http://ndc10.linkedopendata.jp/#356> a skos:Concept ;
+	skos:prefLabel "南アメリカ"@ja ;
+	skos:notation "356" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#350> .
+
+<http://ndc10.linkedopendata.jp/#357> a skos:Concept ;
+	skos:prefLabel "オセアニア、両極地方"@ja ;
+	skos:notation "357" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#350> .
+
+<http://ndc10.linkedopendata.jp/#358> a skos:Concept ;
+	skos:prefLabel "人口統計、国勢調査"@ja ;
+	skos:notation "358" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#36> .
+
+<http://ndc10.linkedopendata.jp/#360> a skos:Concept ;
+	skos:prefLabel "社会"@ja ;
+	skos:notation "360" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#360> .
+
+<http://ndc10.linkedopendata.jp/#361> a skos:Concept ;
+	skos:prefLabel "社会学"@ja ;
+	skos:notation "361" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#360> .
+
+<http://ndc10.linkedopendata.jp/#362> a skos:Concept ;
+	skos:prefLabel "社会史、社会体制"@ja ;
+	skos:notation "362" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#360> .
+
+<http://ndc10.linkedopendata.jp/#364> a skos:Concept ;
+	skos:prefLabel "社会保障"@ja ;
+	skos:notation "364" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#360> .
+
+<http://ndc10.linkedopendata.jp/#365> a skos:Concept ;
+	skos:prefLabel "生活・消費者問題"@ja ;
+	skos:notation "365" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#360> .
+
+<http://ndc10.linkedopendata.jp/#366> a skos:Concept ;
+	skos:prefLabel "労働経済、労働問題"@ja ;
+	skos:notation "366" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#360> .
+
+<http://ndc10.linkedopendata.jp/#367> a skos:Concept ;
+	skos:prefLabel "家族問題、男性・女性問題、老人問題"@ja ;
+	skos:notation "367" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#360> .
+
+<http://ndc10.linkedopendata.jp/#368> a skos:Concept ;
+	skos:prefLabel "社会病理"@ja ;
+	skos:notation "368" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#360> .
+
+<http://ndc10.linkedopendata.jp/#369> a skos:Concept ;
+	skos:prefLabel "社会福祉"@ja ;
+	skos:notation "369" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#360> .
+
+<http://ndc10.linkedopendata.jp/#370> a skos:Concept ;
+	skos:prefLabel "教育"@ja ;
+	skos:notation "370" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#37> .
+
+<http://ndc10.linkedopendata.jp/#371> a skos:Concept ;
+	skos:prefLabel "教育学、教育思想"@ja ;
+	skos:notation "371" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#370> .
+
+<http://ndc10.linkedopendata.jp/#372> a skos:Concept ;
+	skos:prefLabel "教育史・事情"@ja ;
+	skos:notation "372" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#370> .
+
+<http://ndc10.linkedopendata.jp/#373> a skos:Concept ;
+	skos:prefLabel "教育政策、教育制度、教育行財政"@ja ;
+	skos:notation "373" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#370> .
+
+<http://ndc10.linkedopendata.jp/#374> a skos:Concept ;
+	skos:prefLabel "学校経営・管理、学校保健"@ja ;
+	skos:notation "374" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#370> .
+
+<http://ndc10.linkedopendata.jp/#375> a skos:Concept ;
+	skos:prefLabel "教育課程、学習指導、教科別教育"@ja ;
+	skos:notation "375" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#370> .
+
+<http://ndc10.linkedopendata.jp/#376> a skos:Concept ;
+	skos:prefLabel "幼児・初等・中等教育"@ja ;
+	skos:notation "376" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#370> .
+
+<http://ndc10.linkedopendata.jp/#377> a skos:Concept ;
+	skos:prefLabel "大学、高等・専門教育、学術行政"@ja ;
+	skos:notation "377" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#370> .
+
+<http://ndc10.linkedopendata.jp/#378> a skos:Concept ;
+	skos:prefLabel "障害児教育（特別支援教育）"@ja ;
+	skos:notation "378" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#370> .
+
+<http://ndc10.linkedopendata.jp/#379> a skos:Concept ;
+	skos:prefLabel "社会教育"@ja ;
+	skos:notation "379" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#370> .
+
+<http://ndc10.linkedopendata.jp/#380> a skos:Concept ;
+	skos:prefLabel "風俗習慣、民俗学、民族学"@ja ;
+	skos:notation "380" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#38> .
+
+<http://ndc10.linkedopendata.jp/#382> a skos:Concept ;
+	skos:prefLabel "風俗史、民俗誌、民族誌"@ja ;
+	skos:notation "382" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#380> .
+
+<http://ndc10.linkedopendata.jp/#383> a skos:Concept ;
+	skos:prefLabel "衣食住の習俗"@ja ;
+	skos:notation "383" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#380> .
+
+<http://ndc10.linkedopendata.jp/#384> a skos:Concept ;
+	skos:prefLabel "社会・家庭生活の習俗"@ja ;
+	skos:notation "384" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#380> .
+
+<http://ndc10.linkedopendata.jp/#385> a skos:Concept ;
+	skos:prefLabel "通過儀礼、冠婚葬祭"@ja ;
+	skos:notation "385" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#380> .
+
+<http://ndc10.linkedopendata.jp/#386> a skos:Concept ;
+	skos:prefLabel "年中行事、祭礼"@ja ;
+	skos:notation "386" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#380> .
+
+<http://ndc10.linkedopendata.jp/#387> a skos:Concept ;
+	skos:prefLabel "民間信仰、迷信（俗信）"@ja ;
+	skos:notation "387" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#380> .
+
+<http://ndc10.linkedopendata.jp/#388> a skos:Concept ;
+	skos:prefLabel "伝説、民話（昔話）"@ja ;
+	skos:notation "388" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#380> .
+
+<http://ndc10.linkedopendata.jp/#389> a skos:Concept ;
+	skos:prefLabel "民族学、文化人類学"@ja ;
+	skos:notation "389" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#380> .
+
+<http://ndc10.linkedopendata.jp/#390> a skos:Concept ;
+	skos:prefLabel "国防、軍事"@ja ;
+	skos:notation "390" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#39> .
+
+<http://ndc10.linkedopendata.jp/#391> a skos:Concept ;
+	skos:prefLabel "戦争、戦略、戦術"@ja ;
+	skos:notation "391" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#390> .
+
+<http://ndc10.linkedopendata.jp/#392> a skos:Concept ;
+	skos:prefLabel "国防史・事情、軍事史・事情"@ja ;
+	skos:notation "392" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#390> .
+
+<http://ndc10.linkedopendata.jp/#393> a skos:Concept ;
+	skos:prefLabel "国防政策・行政・法令"@ja ;
+	skos:notation "393" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#390> .
+
+<http://ndc10.linkedopendata.jp/#394> a skos:Concept ;
+	skos:prefLabel "軍事医学、兵食"@ja ;
+	skos:notation "394" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#390> .
+
+<http://ndc10.linkedopendata.jp/#395> a skos:Concept ;
+	skos:prefLabel "軍事施設、軍需品"@ja ;
+	skos:notation "395" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#390> .
+
+<http://ndc10.linkedopendata.jp/#396> a skos:Concept ;
+	skos:prefLabel "陸軍"@ja ;
+	skos:notation "396" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#390> .
+
+<http://ndc10.linkedopendata.jp/#397> a skos:Concept ;
+	skos:prefLabel "海軍"@ja ;
+	skos:notation "397" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#390> .
+
+<http://ndc10.linkedopendata.jp/#398> a skos:Concept ;
+	skos:prefLabel "空軍"@ja ;
+	skos:notation "398" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#390> .
+
+<http://ndc10.linkedopendata.jp/#399> a skos:Concept ;
+	skos:prefLabel "古代兵法、軍学"@ja ;
+	skos:notation "399" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#390> .
+
+<http://ndc10.linkedopendata.jp/#400> a skos:Concept ;
+	skos:prefLabel "自然科学"@ja ;
+	skos:notation "400" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#40> .
+
+<http://ndc10.linkedopendata.jp/#401> a skos:Concept ;
+	skos:prefLabel "科学理論、科学哲学"@ja ;
+	skos:notation "401" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#400> .
+
+<http://ndc10.linkedopendata.jp/#402> a skos:Concept ;
+	skos:prefLabel "科学史・事情"@ja ;
+	skos:notation "402" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#400> .
+
+<http://ndc10.linkedopendata.jp/#403> a skos:Concept ;
+	skos:prefLabel "参考図書（レファレンスブック）"@ja ;
+	skos:notation "403" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#400> .
+
+<http://ndc10.linkedopendata.jp/#404> a skos:Concept ;
+	skos:prefLabel "論文集、評論集、講演集"@ja ;
+	skos:notation "404" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#400> .
+
+<http://ndc10.linkedopendata.jp/#405> a skos:Concept ;
+	skos:prefLabel "逐次刊行物"@ja ;
+	skos:notation "405" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#400> .
+
+<http://ndc10.linkedopendata.jp/#406> a skos:Concept ;
+	skos:prefLabel "団体"@ja ;
+	skos:notation "406" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#400> .
+
+<http://ndc10.linkedopendata.jp/#407> a skos:Concept ;
+	skos:prefLabel "研究法、指導法、科学教育"@ja ;
+	skos:notation "407" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#400> .
+
+<http://ndc10.linkedopendata.jp/#408> a skos:Concept ;
+	skos:prefLabel "叢書、全集、選集"@ja ;
+	skos:notation "408" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#400> .
+
+<http://ndc10.linkedopendata.jp/#409> a skos:Concept ;
+	skos:prefLabel "科学技術政策、科学技術行政"@ja ;
+	skos:notation "409" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#400> .
+
+<http://ndc10.linkedopendata.jp/#410> a skos:Concept ;
+	skos:prefLabel "数学"@ja ;
+	skos:notation "410" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#41> .
+
+<http://ndc10.linkedopendata.jp/#411> a skos:Concept ;
+	skos:prefLabel "代数学"@ja ;
+	skos:notation "411" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#410> .
+
+<http://ndc10.linkedopendata.jp/#412> a skos:Concept ;
+	skos:prefLabel "数論（整数論）"@ja ;
+	skos:notation "412" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#410> .
+
+<http://ndc10.linkedopendata.jp/#413> a skos:Concept ;
+	skos:prefLabel "解析学"@ja ;
+	skos:notation "413" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#410> .
+
+<http://ndc10.linkedopendata.jp/#414> a skos:Concept ;
+	skos:prefLabel "幾何学"@ja ;
+	skos:notation "414" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#410> .
+
+<http://ndc10.linkedopendata.jp/#415> a skos:Concept ;
+	skos:prefLabel "位相数学"@ja ;
+	skos:notation "415" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#410> .
+
+<http://ndc10.linkedopendata.jp/#417> a skos:Concept ;
+	skos:prefLabel "確率論、数理統計学"@ja ;
+	skos:notation "417" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#410> .
+
+<http://ndc10.linkedopendata.jp/#418> a skos:Concept ;
+	skos:prefLabel "計算法"@ja ;
+	skos:notation "418" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#410> .
+
+<http://ndc10.linkedopendata.jp/#419> a skos:Concept ;
+	skos:prefLabel "和算、中国算法"@ja ;
+	skos:notation "419" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#410> .
+
+<http://ndc10.linkedopendata.jp/#420> a skos:Concept ;
+	skos:prefLabel "物理学"@ja ;
+	skos:notation "420" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#42> .
+
+<http://ndc10.linkedopendata.jp/#421> a skos:Concept ;
+	skos:prefLabel "理論物理学"@ja ;
+	skos:notation "421" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#420> .
+
+<http://ndc10.linkedopendata.jp/#423> a skos:Concept ;
+	skos:prefLabel "力学"@ja ;
+	skos:notation "423" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#420> .
+
+<http://ndc10.linkedopendata.jp/#424> a skos:Concept ;
+	skos:prefLabel "振動学、音響学"@ja ;
+	skos:notation "424" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#420> .
+
+<http://ndc10.linkedopendata.jp/#425> a skos:Concept ;
+	skos:prefLabel "光学"@ja ;
+	skos:notation "425" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#420> .
+
+<http://ndc10.linkedopendata.jp/#426> a skos:Concept ;
+	skos:prefLabel "熱学"@ja ;
+	skos:notation "426" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#420> .
+
+<http://ndc10.linkedopendata.jp/#427> a skos:Concept ;
+	skos:prefLabel "電磁気学"@ja ;
+	skos:notation "427" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#420> .
+
+<http://ndc10.linkedopendata.jp/#428> a skos:Concept ;
+	skos:prefLabel "物性物理学"@ja ;
+	skos:notation "428" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#420> .
+
+<http://ndc10.linkedopendata.jp/#429> a skos:Concept ;
+	skos:prefLabel "原子物理学"@ja ;
+	skos:notation "429" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#420> .
+
+<http://ndc10.linkedopendata.jp/#430> a skos:Concept ;
+	skos:prefLabel "化学"@ja ;
+	skos:notation "430" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#43> .
+
+<http://ndc10.linkedopendata.jp/#431> a skos:Concept ;
+	skos:prefLabel "物理化学、理論化学"@ja ;
+	skos:notation "431" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#430> .
+
+<http://ndc10.linkedopendata.jp/#432> a skos:Concept ;
+	skos:prefLabel "実験化学（化学実験法）"@ja ;
+	skos:notation "432" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#430> .
+
+<http://ndc10.linkedopendata.jp/#433> a skos:Concept ;
+	skos:prefLabel "分析化学（化学分析）"@ja ;
+	skos:notation "433" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#430> .
+
+<http://ndc10.linkedopendata.jp/#434> a skos:Concept ;
+	skos:prefLabel "合成化学（化学合成）"@ja ;
+	skos:notation "434" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#430> .
+
+<http://ndc10.linkedopendata.jp/#435> a skos:Concept ;
+	skos:prefLabel "無機化学"@ja ;
+	skos:notation "435" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#430> .
+
+<http://ndc10.linkedopendata.jp/#436> a skos:Concept ;
+	skos:prefLabel "金属元素とその化合物"@ja ;
+	skos:notation "436" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#435> .
+
+<http://ndc10.linkedopendata.jp/#437> a skos:Concept ;
+	skos:prefLabel "有機化学"@ja ;
+	skos:notation "437" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#430> .
+
+<http://ndc10.linkedopendata.jp/#438> a skos:Concept ;
+	skos:prefLabel "環式化合物の化学"@ja ;
+	skos:notation "438" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#437> .
+
+<http://ndc10.linkedopendata.jp/#439> a skos:Concept ;
+	skos:prefLabel "天然物質の化学"@ja ;
+	skos:notation "439" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#437> .
+
+<http://ndc10.linkedopendata.jp/#440> a skos:Concept ;
+	skos:prefLabel "天文学、宇宙科学"@ja ;
+	skos:notation "440" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#44> .
+
+<http://ndc10.linkedopendata.jp/#441> a skos:Concept ;
+	skos:prefLabel "理論天文学、数理天文学"@ja ;
+	skos:notation "441" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#440> .
+
+<http://ndc10.linkedopendata.jp/#442> a skos:Concept ;
+	skos:prefLabel "実地天文学、天体観測法"@ja ;
+	skos:notation "442" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#440> .
+
+<http://ndc10.linkedopendata.jp/#443> a skos:Concept ;
+	skos:prefLabel "恒星、恒星天文学"@ja ;
+	skos:notation "443" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#440> .
+
+<http://ndc10.linkedopendata.jp/#444> a skos:Concept ;
+	skos:prefLabel "太陽、太陽物理学"@ja ;
+	skos:notation "444" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#440> .
+
+<http://ndc10.linkedopendata.jp/#445> a skos:Concept ;
+	skos:prefLabel "惑星、衛星"@ja ;
+	skos:notation "445" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#440> .
+
+<http://ndc10.linkedopendata.jp/#446> a skos:Concept ;
+	skos:prefLabel "月"@ja ;
+	skos:notation "446" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#440> .
+
+<http://ndc10.linkedopendata.jp/#447> a skos:Concept ;
+	skos:prefLabel "彗星、流星"@ja ;
+	skos:notation "447" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#440> .
+
+<http://ndc10.linkedopendata.jp/#448> a skos:Concept ;
+	skos:prefLabel "地球、天文地理学"@ja ;
+	skos:notation "448" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#440> .
+
+<http://ndc10.linkedopendata.jp/#449> a skos:Concept ;
+	skos:prefLabel "時法、暦学"@ja ;
+	skos:notation "449" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#440> .
+
+<http://ndc10.linkedopendata.jp/#450> a skos:Concept ;
+	skos:prefLabel "地球科学、地学"@ja ;
+	skos:notation "450" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#45> .
+
+<http://ndc10.linkedopendata.jp/#451> a skos:Concept ;
+	skos:prefLabel "気象学"@ja ;
+	skos:notation "451" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#450> .
+
+<http://ndc10.linkedopendata.jp/#452> a skos:Concept ;
+	skos:prefLabel "海洋学"@ja ;
+	skos:notation "452" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#450> .
+
+<http://ndc10.linkedopendata.jp/#453> a skos:Concept ;
+	skos:prefLabel "地震学"@ja ;
+	skos:notation "453" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#450> .
+
+<http://ndc10.linkedopendata.jp/#454> a skos:Concept ;
+	skos:prefLabel "地形学"@ja ;
+	skos:notation "454" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#450> .
+
+<http://ndc10.linkedopendata.jp/#455> a skos:Concept ;
+	skos:prefLabel "地質学"@ja ;
+	skos:notation "455" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#450> .
+
+<http://ndc10.linkedopendata.jp/#456> a skos:Concept ;
+	skos:prefLabel "地史学、層位学"@ja ;
+	skos:notation "456" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#450> .
+
+<http://ndc10.linkedopendata.jp/#457> a skos:Concept ;
+	skos:prefLabel "古生物学、化石"@ja ;
+	skos:notation "457" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#450> .
+
+<http://ndc10.linkedopendata.jp/#458> a skos:Concept ;
+	skos:prefLabel "岩石学"@ja ;
+	skos:notation "458" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#450> .
+
+<http://ndc10.linkedopendata.jp/#459> a skos:Concept ;
+	skos:prefLabel "鉱物学"@ja ;
+	skos:notation "459" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#450> .
+
+<http://ndc10.linkedopendata.jp/#460> a skos:Concept ;
+	skos:prefLabel "生物科学、一般生物学"@ja ;
+	skos:notation "460" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#46> .
+
+<http://ndc10.linkedopendata.jp/#461> a skos:Concept ;
+	skos:prefLabel "理論生物学、生命論"@ja ;
+	skos:notation "461" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#460> .
+
+<http://ndc10.linkedopendata.jp/#462> a skos:Concept ;
+	skos:prefLabel "生物地理、生物誌"@ja ;
+	skos:notation "462" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#460> .
+
+<http://ndc10.linkedopendata.jp/#463> a skos:Concept ;
+	skos:prefLabel "細胞学"@ja ;
+	skos:notation "463" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#460> .
+
+<http://ndc10.linkedopendata.jp/#464> a skos:Concept ;
+	skos:prefLabel "生化学"@ja ;
+	skos:notation "464" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#460> .
+
+<http://ndc10.linkedopendata.jp/#465> a skos:Concept ;
+	skos:prefLabel "微生物学"@ja ;
+	skos:notation "465" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#460> .
+
+<http://ndc10.linkedopendata.jp/#467> a skos:Concept ;
+	skos:prefLabel "遺伝学"@ja ;
+	skos:notation "467" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#460> .
+
+<http://ndc10.linkedopendata.jp/#468> a skos:Concept ;
+	skos:prefLabel "生態学"@ja ;
+	skos:notation "468" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#460> .
+
+<http://ndc10.linkedopendata.jp/#469> a skos:Concept ;
+	skos:prefLabel "人類学"@ja ;
+	skos:notation "469" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#460> .
+
+<http://ndc10.linkedopendata.jp/#470> a skos:Concept ;
+	skos:prefLabel "植物学"@ja ;
+	skos:notation "470" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#47> .
+
+<http://ndc10.linkedopendata.jp/#471> a skos:Concept ;
+	skos:prefLabel "一般植物学"@ja ;
+	skos:notation "471" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#470> .
+
+<http://ndc10.linkedopendata.jp/#472> a skos:Concept ;
+	skos:prefLabel "植物地理、植物誌"@ja ;
+	skos:notation "472" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#470> .
+
+<http://ndc10.linkedopendata.jp/#473> a skos:Concept ;
+	skos:prefLabel "葉状植物"@ja ;
+	skos:notation "473" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#470> .
+
+<http://ndc10.linkedopendata.jp/#474> a skos:Concept ;
+	skos:prefLabel "藻類、菌類"@ja ;
+	skos:notation "474" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#473> .
+
+<http://ndc10.linkedopendata.jp/#475> a skos:Concept ;
+	skos:prefLabel "コケ植物（蘚苔類）"@ja ;
+	skos:notation "475" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#473> .
+
+<http://ndc10.linkedopendata.jp/#476> a skos:Concept ;
+	skos:prefLabel "シダ植物"@ja ;
+	skos:notation "476" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#473> .
+
+<http://ndc10.linkedopendata.jp/#477> a skos:Concept ;
+	skos:prefLabel "種子植物"@ja ;
+	skos:notation "477" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#470> .
+
+<http://ndc10.linkedopendata.jp/#478> a skos:Concept ;
+	skos:prefLabel "裸子植物"@ja ;
+	skos:notation "478" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#477> .
+
+<http://ndc10.linkedopendata.jp/#479> a skos:Concept ;
+	skos:prefLabel "被子植物"@ja ;
+	skos:notation "479" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#477> .
+
+<http://ndc10.linkedopendata.jp/#480> a skos:Concept ;
+	skos:prefLabel "動物学"@ja ;
+	skos:notation "480" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#48> .
+
+<http://ndc10.linkedopendata.jp/#481> a skos:Concept ;
+	skos:prefLabel "一般動物学"@ja ;
+	skos:notation "481" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#480> .
+
+<http://ndc10.linkedopendata.jp/#482> a skos:Concept ;
+	skos:prefLabel "動物地理、動物誌"@ja ;
+	skos:notation "482" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#480> .
+
+<http://ndc10.linkedopendata.jp/#483> a skos:Concept ;
+	skos:prefLabel "無脊椎動物"@ja ;
+	skos:notation "483" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#480> .
+
+<http://ndc10.linkedopendata.jp/#484> a skos:Concept ;
+	skos:prefLabel "軟体動物、貝類学"@ja ;
+	skos:notation "484" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#483> .
+
+<http://ndc10.linkedopendata.jp/#485> a skos:Concept ;
+	skos:prefLabel "節足動物"@ja ;
+	skos:notation "485" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#483> .
+
+<http://ndc10.linkedopendata.jp/#486> a skos:Concept ;
+	skos:prefLabel "昆虫類"@ja ;
+	skos:notation "486" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#485> .
+
+<http://ndc10.linkedopendata.jp/#487> a skos:Concept ;
+	skos:prefLabel "脊椎動物"@ja ;
+	skos:notation "487" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#480> .
+
+<http://ndc10.linkedopendata.jp/#488> a skos:Concept ;
+	skos:prefLabel "鳥類"@ja ;
+	skos:notation "488" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#487> .
+
+<http://ndc10.linkedopendata.jp/#489> a skos:Concept ;
+	skos:prefLabel "哺乳類"@ja ;
+	skos:notation "489" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#487> .
+
+<http://ndc10.linkedopendata.jp/#490> a skos:Concept ;
+	skos:prefLabel "医学"@ja ;
+	skos:notation "490" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#49> .
+
+<http://ndc10.linkedopendata.jp/#491> a skos:Concept ;
+	skos:prefLabel "基礎医学"@ja ;
+	skos:notation "491" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#490> .
+
+<http://ndc10.linkedopendata.jp/#492> a skos:Concept ;
+	skos:prefLabel "臨床医学、診断・治療"@ja ;
+	skos:notation "492" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#490> .
+
+<http://ndc10.linkedopendata.jp/#493> a skos:Concept ;
+	skos:prefLabel "内科学"@ja ;
+	skos:notation "493" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#490> .
+
+<http://ndc10.linkedopendata.jp/#494> a skos:Concept ;
+	skos:prefLabel "外科学"@ja ;
+	skos:notation "494" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#490> .
+
+<http://ndc10.linkedopendata.jp/#495> a skos:Concept ;
+	skos:prefLabel "婦人科学、産科学"@ja ;
+	skos:notation "495" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#490> .
+
+<http://ndc10.linkedopendata.jp/#496> a skos:Concept ;
+	skos:prefLabel "眼科学、耳鼻咽喉科学"@ja ;
+	skos:notation "496" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#490> .
+
+<http://ndc10.linkedopendata.jp/#497> a skos:Concept ;
+	skos:prefLabel "歯科学"@ja ;
+	skos:notation "497" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#490> .
+
+<http://ndc10.linkedopendata.jp/#498> a skos:Concept ;
+	skos:prefLabel "衛生学、公衆衛生、予防医学"@ja ;
+	skos:notation "498" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#490> .
+
+<http://ndc10.linkedopendata.jp/#499> a skos:Concept ;
+	skos:prefLabel "薬学"@ja ;
+	skos:notation "499" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#49> .
+
+<http://ndc10.linkedopendata.jp/#500> a skos:Concept ;
+	skos:prefLabel "技術、工学"@ja ;
+	skos:notation "500" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#50> .
+
+<http://ndc10.linkedopendata.jp/#501> a skos:Concept ;
+	skos:prefLabel "工業基礎学"@ja ;
+	skos:notation "501" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#500> .
+
+<http://ndc10.linkedopendata.jp/#502> a skos:Concept ;
+	skos:prefLabel "技術史、工学史"@ja ;
+	skos:notation "502" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#500> .
+
+<http://ndc10.linkedopendata.jp/#503> a skos:Concept ;
+	skos:prefLabel "参考図書（レファレンスブック）"@ja ;
+	skos:notation "503" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#500> .
+
+<http://ndc10.linkedopendata.jp/#504> a skos:Concept ;
+	skos:prefLabel "論文集、評論集、講演集"@ja ;
+	skos:notation "504" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#500> .
+
+<http://ndc10.linkedopendata.jp/#505> a skos:Concept ;
+	skos:prefLabel "逐次刊行物"@ja ;
+	skos:notation "505" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#500> .
+
+<http://ndc10.linkedopendata.jp/#506> a skos:Concept ;
+	skos:prefLabel "団体"@ja ;
+	skos:notation "506" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#500> .
+
+<http://ndc10.linkedopendata.jp/#507> a skos:Concept ;
+	skos:prefLabel "研究法、指導法、技術教育"@ja ;
+	skos:notation "507" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#500> .
+
+<http://ndc10.linkedopendata.jp/#508> a skos:Concept ;
+	skos:prefLabel "叢書、全集、選集"@ja ;
+	skos:notation "508" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#500> .
+
+<http://ndc10.linkedopendata.jp/#509> a skos:Concept ;
+	skos:prefLabel "工業、工業経済"@ja ;
+	skos:notation "509" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#500> .
+
+<http://ndc10.linkedopendata.jp/#510> a skos:Concept ;
+	skos:prefLabel "建設工学、土木工学"@ja ;
+	skos:notation "510" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#51> .
+
+<http://ndc10.linkedopendata.jp/#511> a skos:Concept ;
+	skos:prefLabel "土木力学、建設材料"@ja ;
+	skos:notation "511" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#510> .
+
+<http://ndc10.linkedopendata.jp/#512> a skos:Concept ;
+	skos:prefLabel "測量"@ja ;
+	skos:notation "512" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#510> .
+
+<http://ndc10.linkedopendata.jp/#513> a skos:Concept ;
+	skos:prefLabel "土木設計・施工法"@ja ;
+	skos:notation "513" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#510> .
+
+<http://ndc10.linkedopendata.jp/#514> a skos:Concept ;
+	skos:prefLabel "道路工学"@ja ;
+	skos:notation "514" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#510> .
+
+<http://ndc10.linkedopendata.jp/#515> a skos:Concept ;
+	skos:prefLabel "橋梁工学"@ja ;
+	skos:notation "515" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#510> .
+
+<http://ndc10.linkedopendata.jp/#516> a skos:Concept ;
+	skos:prefLabel "鉄道工学"@ja ;
+	skos:notation "516" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#510> .
+
+<http://ndc10.linkedopendata.jp/#517> a skos:Concept ;
+	skos:prefLabel "河海工学、河川工学"@ja ;
+	skos:notation "517" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#510> .
+
+<http://ndc10.linkedopendata.jp/#518> a skos:Concept ;
+	skos:prefLabel "衛生工学、都市工学"@ja ;
+	skos:notation "518" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#510> .
+
+<http://ndc10.linkedopendata.jp/#519> a skos:Concept ;
+	skos:prefLabel "環境工学、公害"@ja ;
+	skos:notation "519" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#510> .
+
+<http://ndc10.linkedopendata.jp/#520> a skos:Concept ;
+	skos:prefLabel "建築学"@ja ;
+	skos:notation "520" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#52> .
+
+<http://ndc10.linkedopendata.jp/#521> a skos:Concept ;
+	skos:prefLabel "日本の建築"@ja ;
+	skos:notation "521" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#520> .
+
+<http://ndc10.linkedopendata.jp/#522> a skos:Concept ;
+	skos:prefLabel "東洋の建築、アジアの建築"@ja ;
+	skos:notation "522" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#520> .
+
+<http://ndc10.linkedopendata.jp/#523> a skos:Concept ;
+	skos:prefLabel "西洋の建築、その他の様式の建築"@ja ;
+	skos:notation "523" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#520> .
+
+<http://ndc10.linkedopendata.jp/#524> a skos:Concept ;
+	skos:prefLabel "建築構造"@ja ;
+	skos:notation "524" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#520> .
+
+<http://ndc10.linkedopendata.jp/#525> a skos:Concept ;
+	skos:prefLabel "建築計画・施工"@ja ;
+	skos:notation "525" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#520> .
+
+<http://ndc10.linkedopendata.jp/#526> a skos:Concept ;
+	skos:prefLabel "各種の建築"@ja ;
+	skos:notation "526" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#520> .
+
+<http://ndc10.linkedopendata.jp/#527> a skos:Concept ;
+	skos:prefLabel "住宅建築"@ja ;
+	skos:notation "527" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#526> .
+
+<http://ndc10.linkedopendata.jp/#528> a skos:Concept ;
+	skos:prefLabel "建築設備、設備工学"@ja ;
+	skos:notation "528" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#520> .
+
+<http://ndc10.linkedopendata.jp/#529> a skos:Concept ;
+	skos:prefLabel "建築意匠・装飾"@ja ;
+	skos:notation "529" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#520> .
+
+<http://ndc10.linkedopendata.jp/#530> a skos:Concept ;
+	skos:prefLabel "機械工学"@ja ;
+	skos:notation "530" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#53> .
+
+<http://ndc10.linkedopendata.jp/#531> a skos:Concept ;
+	skos:prefLabel "機械力学・材料・設計"@ja ;
+	skos:notation "531" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#530> .
+
+<http://ndc10.linkedopendata.jp/#532> a skos:Concept ;
+	skos:prefLabel "機械工作、工作機械"@ja ;
+	skos:notation "532" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#530> .
+
+<http://ndc10.linkedopendata.jp/#533> a skos:Concept ;
+	skos:prefLabel "熱機関、熱工学"@ja ;
+	skos:notation "533" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#530> .
+
+<http://ndc10.linkedopendata.jp/#534> a skos:Concept ;
+	skos:prefLabel "流体機械、流体工学"@ja ;
+	skos:notation "534" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#530> .
+
+<http://ndc10.linkedopendata.jp/#535> a skos:Concept ;
+	skos:prefLabel "精密機器、光学機器"@ja ;
+	skos:notation "535" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#530> .
+
+<http://ndc10.linkedopendata.jp/#536> a skos:Concept ;
+	skos:prefLabel "運輸工学、車両、運搬機械"@ja ;
+	skos:notation "536" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#530> .
+
+<http://ndc10.linkedopendata.jp/#537> a skos:Concept ;
+	skos:prefLabel "自動車工学"@ja ;
+	skos:notation "537" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#530> .
+
+<http://ndc10.linkedopendata.jp/#538> a skos:Concept ;
+	skos:prefLabel "航空工学、宇宙工学"@ja ;
+	skos:notation "538" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#530> .
+
+<http://ndc10.linkedopendata.jp/#539> a skos:Concept ;
+	skos:prefLabel "原子力工学"@ja ;
+	skos:notation "539" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#53> .
+
+<http://ndc10.linkedopendata.jp/#540> a skos:Concept ;
+	skos:prefLabel "電気工学"@ja ;
+	skos:notation "540" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#54> .
+
+<http://ndc10.linkedopendata.jp/#541> a skos:Concept ;
+	skos:prefLabel "電気回路・計測・材料"@ja ;
+	skos:notation "541" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#540> .
+
+<http://ndc10.linkedopendata.jp/#542> a skos:Concept ;
+	skos:prefLabel "電気機器"@ja ;
+	skos:notation "542" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#540> .
+
+<http://ndc10.linkedopendata.jp/#543> a skos:Concept ;
+	skos:prefLabel "発電"@ja ;
+	skos:notation "543" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#540> .
+
+<http://ndc10.linkedopendata.jp/#544> a skos:Concept ;
+	skos:prefLabel "送電、変電、配電"@ja ;
+	skos:notation "544" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#540> .
+
+<http://ndc10.linkedopendata.jp/#545> a skos:Concept ;
+	skos:prefLabel "電灯、照明、電熱"@ja ;
+	skos:notation "545" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#540> .
+
+<http://ndc10.linkedopendata.jp/#547> a skos:Concept ;
+	skos:prefLabel "通信工学、電気通信"@ja ;
+	skos:notation "547" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#540> .
+
+<http://ndc10.linkedopendata.jp/#548> a skos:Concept ;
+	skos:prefLabel "情報工学"@ja ;
+	skos:notation "548" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#540> .
+
+<http://ndc10.linkedopendata.jp/#549> a skos:Concept ;
+	skos:prefLabel "電子工学"@ja ;
+	skos:notation "549" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#540> .
+
+<http://ndc10.linkedopendata.jp/#550> a skos:Concept ;
+	skos:prefLabel "海洋工学、船舶工学"@ja ;
+	skos:notation "550" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#55> .
+
+<http://ndc10.linkedopendata.jp/#551> a skos:Concept ;
+	skos:prefLabel "理論造船学"@ja ;
+	skos:notation "551" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#550> .
+
+<http://ndc10.linkedopendata.jp/#552> a skos:Concept ;
+	skos:prefLabel "船体構造・材料・施工"@ja ;
+	skos:notation "552" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#550> .
+
+<http://ndc10.linkedopendata.jp/#553> a skos:Concept ;
+	skos:prefLabel "船体艤装、船舶設備"@ja ;
+	skos:notation "553" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#550> .
+
+<http://ndc10.linkedopendata.jp/#554> a skos:Concept ;
+	skos:prefLabel "舶用機関（造機）"@ja ;
+	skos:notation "554" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#550> .
+
+<http://ndc10.linkedopendata.jp/#555> a skos:Concept ;
+	skos:prefLabel "船舶修理、保守"@ja ;
+	skos:notation "555" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#550> .
+
+<http://ndc10.linkedopendata.jp/#556> a skos:Concept ;
+	skos:prefLabel "各種の船舶・艦艇"@ja ;
+	skos:notation "556" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#550> .
+
+<http://ndc10.linkedopendata.jp/#557> a skos:Concept ;
+	skos:prefLabel "航海、航海学"@ja ;
+	skos:notation "557" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#550> .
+
+<http://ndc10.linkedopendata.jp/#558> a skos:Concept ;
+	skos:prefLabel "海洋開発"@ja ;
+	skos:notation "558" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#550> .
+
+<http://ndc10.linkedopendata.jp/#559> a skos:Concept ;
+	skos:prefLabel "兵器、軍事工学"@ja ;
+	skos:notation "559" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#55> .
+
+<http://ndc10.linkedopendata.jp/#560> a skos:Concept ;
+	skos:prefLabel "金属工学、鉱山工学"@ja ;
+	skos:notation "560" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#56> .
+
+<http://ndc10.linkedopendata.jp/#561> a skos:Concept ;
+	skos:prefLabel "採鉱、選鉱"@ja ;
+	skos:notation "561" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#560> .
+
+<http://ndc10.linkedopendata.jp/#562> a skos:Concept ;
+	skos:prefLabel "各種の金属鉱床・採掘"@ja ;
+	skos:notation "562" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#560> .
+
+<http://ndc10.linkedopendata.jp/#563> a skos:Concept ;
+	skos:prefLabel "冶金、合金"@ja ;
+	skos:notation "563" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#560> .
+
+<http://ndc10.linkedopendata.jp/#564> a skos:Concept ;
+	skos:prefLabel "鉄鋼"@ja ;
+	skos:notation "564" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#563> .
+
+<http://ndc10.linkedopendata.jp/#565> a skos:Concept ;
+	skos:prefLabel "非鉄金属"@ja ;
+	skos:notation "565" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#563> .
+
+<http://ndc10.linkedopendata.jp/#566> a skos:Concept ;
+	skos:prefLabel "金属加工、製造冶金"@ja ;
+	skos:notation "566" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#563> .
+
+<http://ndc10.linkedopendata.jp/#567> a skos:Concept ;
+	skos:prefLabel "石炭"@ja ;
+	skos:notation "567" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#560> .
+
+<http://ndc10.linkedopendata.jp/#568> a skos:Concept ;
+	skos:prefLabel "石油"@ja ;
+	skos:notation "568" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#560> .
+
+<http://ndc10.linkedopendata.jp/#569> a skos:Concept ;
+	skos:prefLabel "非金属鉱物、土石採取業"@ja ;
+	skos:notation "569" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#560> .
+
+<http://ndc10.linkedopendata.jp/#570> a skos:Concept ;
+	skos:prefLabel "化学工業"@ja ;
+	skos:notation "570" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#57> .
+
+<http://ndc10.linkedopendata.jp/#571> a skos:Concept ;
+	skos:prefLabel "化学工学、化学機器"@ja ;
+	skos:notation "571" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#570> .
+
+<http://ndc10.linkedopendata.jp/#572> a skos:Concept ;
+	skos:prefLabel "電気化学工業"@ja ;
+	skos:notation "572" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#570> .
+
+<http://ndc10.linkedopendata.jp/#573> a skos:Concept ;
+	skos:prefLabel "セラミックス、窯業、珪酸塩化学工業"@ja ;
+	skos:notation "573" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#570> .
+
+<http://ndc10.linkedopendata.jp/#574> a skos:Concept ;
+	skos:prefLabel "化学薬品"@ja ;
+	skos:notation "574" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#570> .
+
+<http://ndc10.linkedopendata.jp/#575> a skos:Concept ;
+	skos:prefLabel "燃料、爆発物"@ja ;
+	skos:notation "575" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#570> .
+
+<http://ndc10.linkedopendata.jp/#576> a skos:Concept ;
+	skos:prefLabel "油脂類"@ja ;
+	skos:notation "576" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#570> .
+
+<http://ndc10.linkedopendata.jp/#577> a skos:Concept ;
+	skos:prefLabel "染料"@ja ;
+	skos:notation "577" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#570> .
+
+<http://ndc10.linkedopendata.jp/#578> a skos:Concept ;
+	skos:prefLabel "高分子化学工業"@ja ;
+	skos:notation "578" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#570> .
+
+<http://ndc10.linkedopendata.jp/#579> a skos:Concept ;
+	skos:prefLabel "その他の化学工業"@ja ;
+	skos:notation "579" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#570> .
+
+<http://ndc10.linkedopendata.jp/#580> a skos:Concept ;
+	skos:prefLabel "製造工業"@ja ;
+	skos:notation "580" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#58> .
+
+<http://ndc10.linkedopendata.jp/#581> a skos:Concept ;
+	skos:prefLabel "金属製品"@ja ;
+	skos:notation "581" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#580> .
+
+<http://ndc10.linkedopendata.jp/#582> a skos:Concept ;
+	skos:prefLabel "事務機器、家庭機器、楽器"@ja ;
+	skos:notation "582" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#580> .
+
+<http://ndc10.linkedopendata.jp/#583> a skos:Concept ;
+	skos:prefLabel "木工業、木製品"@ja ;
+	skos:notation "583" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#580> .
+
+<http://ndc10.linkedopendata.jp/#584> a skos:Concept ;
+	skos:prefLabel "皮革工業、皮革製品"@ja ;
+	skos:notation "584" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#580> .
+
+<http://ndc10.linkedopendata.jp/#585> a skos:Concept ;
+	skos:prefLabel "パルプ・製紙工業"@ja ;
+	skos:notation "585" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#580> .
+
+<http://ndc10.linkedopendata.jp/#586> a skos:Concept ;
+	skos:prefLabel "繊維工学"@ja ;
+	skos:notation "586" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#580> .
+
+<http://ndc10.linkedopendata.jp/#587> a skos:Concept ;
+	skos:prefLabel "染色加工、染色業"@ja ;
+	skos:notation "587" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#580> .
+
+<http://ndc10.linkedopendata.jp/#588> a skos:Concept ;
+	skos:prefLabel "食品工業"@ja ;
+	skos:notation "588" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#580> .
+
+<http://ndc10.linkedopendata.jp/#589> a skos:Concept ;
+	skos:prefLabel "その他の雑工業"@ja ;
+	skos:notation "589" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#580> .
+
+<http://ndc10.linkedopendata.jp/#590> a skos:Concept ;
+	skos:prefLabel "家政学、生活科学"@ja ;
+	skos:notation "590" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#59> .
+
+<http://ndc10.linkedopendata.jp/#591> a skos:Concept ;
+	skos:prefLabel "家庭経済・経営"@ja ;
+	skos:notation "591" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#590> .
+
+<http://ndc10.linkedopendata.jp/#592> a skos:Concept ;
+	skos:prefLabel "家庭理工学"@ja ;
+	skos:notation "592" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#590> .
+
+<http://ndc10.linkedopendata.jp/#593> a skos:Concept ;
+	skos:prefLabel "衣服、裁縫"@ja ;
+	skos:notation "593" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#590> .
+
+<http://ndc10.linkedopendata.jp/#594> a skos:Concept ;
+	skos:prefLabel "手芸"@ja ;
+	skos:notation "594" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#590> .
+
+<http://ndc10.linkedopendata.jp/#595> a skos:Concept ;
+	skos:prefLabel "理容、美容"@ja ;
+	skos:notation "595" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#590> .
+
+<http://ndc10.linkedopendata.jp/#596> a skos:Concept ;
+	skos:prefLabel "食品、料理"@ja ;
+	skos:notation "596" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#590> .
+
+<http://ndc10.linkedopendata.jp/#597> a skos:Concept ;
+	skos:prefLabel "住居、家具調度"@ja ;
+	skos:notation "597" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#590> .
+
+<http://ndc10.linkedopendata.jp/#598> a skos:Concept ;
+	skos:prefLabel "家庭衛生"@ja ;
+	skos:notation "598" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#590> .
+
+<http://ndc10.linkedopendata.jp/#599> a skos:Concept ;
+	skos:prefLabel "育児"@ja ;
+	skos:notation "599" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#590> .
+
+<http://ndc10.linkedopendata.jp/#600> a skos:Concept ;
+	skos:prefLabel "産業"@ja ;
+	skos:notation "600" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#60> .
+
+<http://ndc10.linkedopendata.jp/#601> a skos:Concept ;
+	skos:prefLabel "産業政策・行政、総合開発"@ja ;
+	skos:notation "601" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#600> .
+
+<http://ndc10.linkedopendata.jp/#602> a skos:Concept ;
+	skos:prefLabel "産業史・事情、物産誌"@ja ;
+	skos:notation "602" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#600> .
+
+<http://ndc10.linkedopendata.jp/#603> a skos:Concept ;
+	skos:prefLabel "参考図書（レファレンスブック）"@ja ;
+	skos:notation "603" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#600> .
+
+<http://ndc10.linkedopendata.jp/#604> a skos:Concept ;
+	skos:prefLabel "論文集、評論集、講演集"@ja ;
+	skos:notation "604" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#600> .
+
+<http://ndc10.linkedopendata.jp/#605> a skos:Concept ;
+	skos:prefLabel "逐次刊行物"@ja ;
+	skos:notation "605" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#600> .
+
+<http://ndc10.linkedopendata.jp/#606> a skos:Concept ;
+	skos:prefLabel "団体"@ja ;
+	skos:notation "606" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#600> .
+
+<http://ndc10.linkedopendata.jp/#607> a skos:Concept ;
+	skos:prefLabel "研究法、指導法、産業教育"@ja ;
+	skos:notation "607" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#600> .
+
+<http://ndc10.linkedopendata.jp/#608> a skos:Concept ;
+	skos:prefLabel "叢書、全集、選集"@ja ;
+	skos:notation "608" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#600> .
+
+<http://ndc10.linkedopendata.jp/#609> a skos:Concept ;
+	skos:prefLabel "度量衡、計量法"@ja ;
+	skos:notation "609" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#600> .
+
+<http://ndc10.linkedopendata.jp/#610> a skos:Concept ;
+	skos:prefLabel "農業"@ja ;
+	skos:notation "610" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#61> .
+
+<http://ndc10.linkedopendata.jp/#611> a skos:Concept ;
+	skos:prefLabel "農業経済・行政・経営"@ja ;
+	skos:notation "611" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#610> .
+
+<http://ndc10.linkedopendata.jp/#612> a skos:Concept ;
+	skos:prefLabel "農業史・事情"@ja ;
+	skos:notation "612" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#610> .
+
+<http://ndc10.linkedopendata.jp/#613> a skos:Concept ;
+	skos:prefLabel "農業基礎学"@ja ;
+	skos:notation "613" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#610> .
+
+<http://ndc10.linkedopendata.jp/#614> a skos:Concept ;
+	skos:prefLabel "農業工学"@ja ;
+	skos:notation "614" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#610> .
+
+<http://ndc10.linkedopendata.jp/#615> a skos:Concept ;
+	skos:prefLabel "作物栽培、作物学"@ja ;
+	skos:notation "615" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#610> .
+
+<http://ndc10.linkedopendata.jp/#616> a skos:Concept ;
+	skos:prefLabel "食用作物"@ja ;
+	skos:notation "616" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#615> .
+
+<http://ndc10.linkedopendata.jp/#617> a skos:Concept ;
+	skos:prefLabel "工芸作物"@ja ;
+	skos:notation "617" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#615> .
+
+<http://ndc10.linkedopendata.jp/#618> a skos:Concept ;
+	skos:prefLabel "繊維作物"@ja ;
+	skos:notation "618" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#615> .
+
+<http://ndc10.linkedopendata.jp/#619> a skos:Concept ;
+	skos:prefLabel "農産物製造・加工"@ja ;
+	skos:notation "619" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#610> .
+
+<http://ndc10.linkedopendata.jp/#620> a skos:Concept ;
+	skos:prefLabel "園芸"@ja ;
+	skos:notation "620" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#62> .
+
+<http://ndc10.linkedopendata.jp/#621> a skos:Concept ;
+	skos:prefLabel "園芸経済・行政・経営"@ja ;
+	skos:notation "621" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#620> .
+
+<http://ndc10.linkedopendata.jp/#622> a skos:Concept ;
+	skos:prefLabel "園芸史・事情"@ja ;
+	skos:notation "622" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#620> .
+
+<http://ndc10.linkedopendata.jp/#623> a skos:Concept ;
+	skos:prefLabel "園芸植物学、病虫害"@ja ;
+	skos:notation "623" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#620> .
+
+<http://ndc10.linkedopendata.jp/#624> a skos:Concept ;
+	skos:prefLabel "温室、温床、園芸用具"@ja ;
+	skos:notation "624" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#620> .
+
+<http://ndc10.linkedopendata.jp/#625> a skos:Concept ;
+	skos:prefLabel "果樹園芸"@ja ;
+	skos:notation "625" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#620> .
+
+<http://ndc10.linkedopendata.jp/#626> a skos:Concept ;
+	skos:prefLabel "蔬菜園芸"@ja ;
+	skos:notation "626" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#620> .
+
+<http://ndc10.linkedopendata.jp/#627> a skos:Concept ;
+	skos:prefLabel "花卉園芸（草花）"@ja ;
+	skos:notation "627" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#620> .
+
+<http://ndc10.linkedopendata.jp/#628> a skos:Concept ;
+	skos:prefLabel "園芸利用"@ja ;
+	skos:notation "628" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#620> .
+
+<http://ndc10.linkedopendata.jp/#629> a skos:Concept ;
+	skos:prefLabel "造園"@ja ;
+	skos:notation "629" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#62> .
+
+<http://ndc10.linkedopendata.jp/#630> a skos:Concept ;
+	skos:prefLabel "蚕糸業"@ja ;
+	skos:notation "630" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#63> .
+
+<http://ndc10.linkedopendata.jp/#631> a skos:Concept ;
+	skos:prefLabel "蚕糸経済・行政・経営"@ja ;
+	skos:notation "631" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#630> .
+
+<http://ndc10.linkedopendata.jp/#632> a skos:Concept ;
+	skos:prefLabel "蚕糸業史・事情"@ja ;
+	skos:notation "632" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#630> .
+
+<http://ndc10.linkedopendata.jp/#633> a skos:Concept ;
+	skos:prefLabel "蚕学、蚕業基礎学"@ja ;
+	skos:notation "633" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#630> .
+
+<http://ndc10.linkedopendata.jp/#634> a skos:Concept ;
+	skos:prefLabel "蚕種"@ja ;
+	skos:notation "634" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#630> .
+
+<http://ndc10.linkedopendata.jp/#635> a skos:Concept ;
+	skos:prefLabel "飼育法"@ja ;
+	skos:notation "635" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#630> .
+
+<http://ndc10.linkedopendata.jp/#636> a skos:Concept ;
+	skos:prefLabel "くわ、栽桑"@ja ;
+	skos:notation "636" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#630> .
+
+<http://ndc10.linkedopendata.jp/#637> a skos:Concept ;
+	skos:prefLabel "蚕室、蚕具"@ja ;
+	skos:notation "637" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#630> .
+
+<http://ndc10.linkedopendata.jp/#638> a skos:Concept ;
+	skos:prefLabel "まゆ"@ja ;
+	skos:notation "638" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#630> .
+
+<http://ndc10.linkedopendata.jp/#639> a skos:Concept ;
+	skos:prefLabel "製糸、生糸、蚕糸利用"@ja ;
+	skos:notation "639" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#630> .
+
+<http://ndc10.linkedopendata.jp/#640> a skos:Concept ;
+	skos:prefLabel "畜産業"@ja ;
+	skos:notation "640" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#64> .
+
+<http://ndc10.linkedopendata.jp/#641> a skos:Concept ;
+	skos:prefLabel "畜産経済・行政・経営"@ja ;
+	skos:notation "641" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#640> .
+
+<http://ndc10.linkedopendata.jp/#642> a skos:Concept ;
+	skos:prefLabel "畜産史・事情"@ja ;
+	skos:notation "642" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#640> .
+
+<http://ndc10.linkedopendata.jp/#643> a skos:Concept ;
+	skos:prefLabel "家畜の繁殖、家畜飼料"@ja ;
+	skos:notation "643" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#640> .
+
+<http://ndc10.linkedopendata.jp/#644> a skos:Concept ;
+	skos:prefLabel "家畜の管理、畜舎、用具"@ja ;
+	skos:notation "644" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#640> .
+
+<http://ndc10.linkedopendata.jp/#645> a skos:Concept ;
+	skos:prefLabel "家畜、畜産動物、愛玩動物"@ja ;
+	skos:notation "645" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#640> .
+
+<http://ndc10.linkedopendata.jp/#646> a skos:Concept ;
+	skos:prefLabel "家禽"@ja ;
+	skos:notation "646" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#640> .
+
+<http://ndc10.linkedopendata.jp/#648> a skos:Concept ;
+	skos:prefLabel "畜産製造、畜産物"@ja ;
+	skos:notation "648" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#640> .
+
+<http://ndc10.linkedopendata.jp/#649> a skos:Concept ;
+	skos:prefLabel "獣医学"@ja ;
+	skos:notation "649" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#64> .
+
+<http://ndc10.linkedopendata.jp/#650> a skos:Concept ;
+	skos:prefLabel "林業"@ja ;
+	skos:notation "650" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#65> .
+
+<http://ndc10.linkedopendata.jp/#651> a skos:Concept ;
+	skos:prefLabel "林業経済・行政・経営"@ja ;
+	skos:notation "651" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#650> .
+
+<http://ndc10.linkedopendata.jp/#652> a skos:Concept ;
+	skos:prefLabel "森林史、林業史・事情"@ja ;
+	skos:notation "652" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#650> .
+
+<http://ndc10.linkedopendata.jp/#653> a skos:Concept ;
+	skos:prefLabel "森林立地、造林"@ja ;
+	skos:notation "653" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#650> .
+
+<http://ndc10.linkedopendata.jp/#654> a skos:Concept ;
+	skos:prefLabel "森林保護"@ja ;
+	skos:notation "654" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#650> .
+
+<http://ndc10.linkedopendata.jp/#655> a skos:Concept ;
+	skos:prefLabel "森林施業"@ja ;
+	skos:notation "655" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#650> .
+
+<http://ndc10.linkedopendata.jp/#656> a skos:Concept ;
+	skos:prefLabel "森林工学"@ja ;
+	skos:notation "656" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#650> .
+
+<http://ndc10.linkedopendata.jp/#657> a skos:Concept ;
+	skos:prefLabel "森林利用、林産物、木材学"@ja ;
+	skos:notation "657" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#650> .
+
+<http://ndc10.linkedopendata.jp/#658> a skos:Concept ;
+	skos:prefLabel "林産製造"@ja ;
+	skos:notation "658" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#650> .
+
+<http://ndc10.linkedopendata.jp/#659> a skos:Concept ;
+	skos:prefLabel "狩猟"@ja ;
+	skos:notation "659" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#65> .
+
+<http://ndc10.linkedopendata.jp/#660> a skos:Concept ;
+	skos:prefLabel "水産業"@ja ;
+	skos:notation "660" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#66> .
+
+<http://ndc10.linkedopendata.jp/#661> a skos:Concept ;
+	skos:prefLabel "水産経済・行政・経営"@ja ;
+	skos:notation "661" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#660> .
+
+<http://ndc10.linkedopendata.jp/#662> a skos:Concept ;
+	skos:prefLabel "水産業および漁業史・事情"@ja ;
+	skos:notation "662" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#660> .
+
+<http://ndc10.linkedopendata.jp/#663> a skos:Concept ;
+	skos:prefLabel "水産基礎学"@ja ;
+	skos:notation "663" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#660> .
+
+<http://ndc10.linkedopendata.jp/#664> a skos:Concept ;
+	skos:prefLabel "漁労、漁業各論"@ja ;
+	skos:notation "664" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#660> .
+
+<http://ndc10.linkedopendata.jp/#665> a skos:Concept ;
+	skos:prefLabel "漁船、漁具"@ja ;
+	skos:notation "665" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#660> .
+
+<http://ndc10.linkedopendata.jp/#666> a skos:Concept ;
+	skos:prefLabel "水産増殖、養殖業"@ja ;
+	skos:notation "666" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#660> .
+
+<http://ndc10.linkedopendata.jp/#667> a skos:Concept ;
+	skos:prefLabel "水産製造、水産食品"@ja ;
+	skos:notation "667" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#660> .
+
+<http://ndc10.linkedopendata.jp/#668> a skos:Concept ;
+	skos:prefLabel "水産物利用、水産利用工業"@ja ;
+	skos:notation "668" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#660> .
+
+<http://ndc10.linkedopendata.jp/#669> a skos:Concept ;
+	skos:prefLabel "製塩、塩業"@ja ;
+	skos:notation "669" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#660> .
+
+<http://ndc10.linkedopendata.jp/#670> a skos:Concept ;
+	skos:prefLabel "商業"@ja ;
+	skos:notation "670" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#67> .
+
+<http://ndc10.linkedopendata.jp/#671> a skos:Concept ;
+	skos:prefLabel "商業政策・行政"@ja ;
+	skos:notation "671" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#670> .
+
+<http://ndc10.linkedopendata.jp/#672> a skos:Concept ;
+	skos:prefLabel "商業史・事情"@ja ;
+	skos:notation "672" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#670> .
+
+<http://ndc10.linkedopendata.jp/#673> a skos:Concept ;
+	skos:prefLabel "商業経営、商店"@ja ;
+	skos:notation "673" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#670> .
+
+<http://ndc10.linkedopendata.jp/#674> a skos:Concept ;
+	skos:prefLabel "広告、宣伝"@ja ;
+	skos:notation "674" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#670> .
+
+<http://ndc10.linkedopendata.jp/#675> a skos:Concept ;
+	skos:prefLabel "マーケティング"@ja ;
+	skos:notation "675" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#670> .
+
+<http://ndc10.linkedopendata.jp/#676> a skos:Concept ;
+	skos:prefLabel "取引所"@ja ;
+	skos:notation "676" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#670> .
+
+<http://ndc10.linkedopendata.jp/#678> a skos:Concept ;
+	skos:prefLabel "貿易"@ja ;
+	skos:notation "678" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#670> .
+
+<http://ndc10.linkedopendata.jp/#680> a skos:Concept ;
+	skos:prefLabel "運輸、交通"@ja ;
+	skos:notation "680" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#68> .
+
+<http://ndc10.linkedopendata.jp/#681> a skos:Concept ;
+	skos:prefLabel "交通政策・行政・経営"@ja ;
+	skos:notation "681" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#680> .
+
+<http://ndc10.linkedopendata.jp/#682> a skos:Concept ;
+	skos:prefLabel "交通史・事情"@ja ;
+	skos:notation "682" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#680> .
+
+<http://ndc10.linkedopendata.jp/#683> a skos:Concept ;
+	skos:prefLabel "海運"@ja ;
+	skos:notation "683" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#680> .
+
+<http://ndc10.linkedopendata.jp/#684> a skos:Concept ;
+	skos:prefLabel "内陸水運、運河交通"@ja ;
+	skos:notation "684" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#680> .
+
+<http://ndc10.linkedopendata.jp/#685> a skos:Concept ;
+	skos:prefLabel "陸運、道路運輸"@ja ;
+	skos:notation "685" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#680> .
+
+<http://ndc10.linkedopendata.jp/#686> a skos:Concept ;
+	skos:prefLabel "鉄道運輸"@ja ;
+	skos:notation "686" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#680> .
+
+<http://ndc10.linkedopendata.jp/#687> a skos:Concept ;
+	skos:prefLabel "航空運輸"@ja ;
+	skos:notation "687" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#680> .
+
+<http://ndc10.linkedopendata.jp/#688> a skos:Concept ;
+	skos:prefLabel "倉庫業"@ja ;
+	skos:notation "688" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#680> .
+
+<http://ndc10.linkedopendata.jp/#689> a skos:Concept ;
+	skos:prefLabel "観光事業"@ja ;
+	skos:notation "689" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#68> .
+
+<http://ndc10.linkedopendata.jp/#690> a skos:Concept ;
+	skos:prefLabel "通信事業"@ja ;
+	skos:notation "690" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#69> .
+
+<http://ndc10.linkedopendata.jp/#691> a skos:Concept ;
+	skos:prefLabel "通信政策・行政・法令"@ja ;
+	skos:notation "691" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#690> .
+
+<http://ndc10.linkedopendata.jp/#692> a skos:Concept ;
+	skos:prefLabel "通信事業史・事情"@ja ;
+	skos:notation "692" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#690> .
+
+<http://ndc10.linkedopendata.jp/#693> a skos:Concept ;
+	skos:prefLabel "郵便、郵政事業"@ja ;
+	skos:notation "693" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#690> .
+
+<http://ndc10.linkedopendata.jp/#694> a skos:Concept ;
+	skos:prefLabel "電気通信事業"@ja ;
+	skos:notation "694" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#690> .
+
+<http://ndc10.linkedopendata.jp/#699> a skos:Concept ;
+	skos:prefLabel "放送事業"@ja ;
+	skos:notation "699" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#690> .
+
+<http://ndc10.linkedopendata.jp/#700> a skos:Concept ;
+	skos:prefLabel "芸術、美術"@ja ;
+	skos:notation "700" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#70> .
+
+<http://ndc10.linkedopendata.jp/#701> a skos:Concept ;
+	skos:prefLabel "芸術理論、美学"@ja ;
+	skos:notation "701" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#700> .
+
+<http://ndc10.linkedopendata.jp/#702> a skos:Concept ;
+	skos:prefLabel "芸術史、美術史"@ja ;
+	skos:notation "702" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#700> .
+
+<http://ndc10.linkedopendata.jp/#703> a skos:Concept ;
+	skos:prefLabel "参考図書（レファレンスブック）"@ja ;
+	skos:notation "703" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#700> .
+
+<http://ndc10.linkedopendata.jp/#704> a skos:Concept ;
+	skos:prefLabel "論文集、評論集、講演集"@ja ;
+	skos:notation "704" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#700> .
+
+<http://ndc10.linkedopendata.jp/#705> a skos:Concept ;
+	skos:prefLabel "逐次刊行物"@ja ;
+	skos:notation "705" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#700> .
+
+<http://ndc10.linkedopendata.jp/#706> a skos:Concept ;
+	skos:prefLabel "団体"@ja ;
+	skos:notation "706" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#700> .
+
+<http://ndc10.linkedopendata.jp/#707> a skos:Concept ;
+	skos:prefLabel "研究法、指導法、芸術教育"@ja ;
+	skos:notation "707" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#700> .
+
+<http://ndc10.linkedopendata.jp/#708> a skos:Concept ;
+	skos:prefLabel "叢書、全集、選集"@ja ;
+	skos:notation "708" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#700> .
+
+<http://ndc10.linkedopendata.jp/#709> a skos:Concept ;
+	skos:prefLabel "芸術政策、文化財"@ja ;
+	skos:notation "709" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#700> .
+
+<http://ndc10.linkedopendata.jp/#710> a skos:Concept ;
+	skos:prefLabel "彫刻"@ja ;
+	skos:notation "710" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#71> .
+
+<http://ndc10.linkedopendata.jp/#711> a skos:Concept ;
+	skos:prefLabel "彫塑材料・技法"@ja ;
+	skos:notation "711" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#710> .
+
+<http://ndc10.linkedopendata.jp/#712> a skos:Concept ;
+	skos:prefLabel "彫刻史、各国の彫刻"@ja ;
+	skos:notation "712" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#710> .
+
+<http://ndc10.linkedopendata.jp/#713> a skos:Concept ;
+	skos:prefLabel "木彫"@ja ;
+	skos:notation "713" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#710> .
+
+<http://ndc10.linkedopendata.jp/#714> a skos:Concept ;
+	skos:prefLabel "石彫"@ja ;
+	skos:notation "714" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#710> .
+
+<http://ndc10.linkedopendata.jp/#715> a skos:Concept ;
+	skos:prefLabel "金属彫刻、鋳造"@ja ;
+	skos:notation "715" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#710> .
+
+<http://ndc10.linkedopendata.jp/#717> a skos:Concept ;
+	skos:prefLabel "粘土彫刻、塑造"@ja ;
+	skos:notation "717" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#710> .
+
+<http://ndc10.linkedopendata.jp/#718> a skos:Concept ;
+	skos:prefLabel "仏像"@ja ;
+	skos:notation "718" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#710> .
+
+<http://ndc10.linkedopendata.jp/#719> a skos:Concept ;
+	skos:prefLabel "オブジェ"@ja ;
+	skos:notation "719" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#71> .
+
+<http://ndc10.linkedopendata.jp/#720> a skos:Concept ;
+	skos:prefLabel "絵画"@ja ;
+	skos:notation "720" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#72> .
+
+<http://ndc10.linkedopendata.jp/#721> a skos:Concept ;
+	skos:prefLabel "日本画"@ja ;
+	skos:notation "721" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#720> .
+
+<http://ndc10.linkedopendata.jp/#722> a skos:Concept ;
+	skos:prefLabel "東洋画"@ja ;
+	skos:notation "722" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#720> .
+
+<http://ndc10.linkedopendata.jp/#723> a skos:Concept ;
+	skos:prefLabel "洋画"@ja ;
+	skos:notation "723" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#720> .
+
+<http://ndc10.linkedopendata.jp/#724> a skos:Concept ;
+	skos:prefLabel "絵画材料・技法"@ja ;
+	skos:notation "724" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#720> .
+
+<http://ndc10.linkedopendata.jp/#725> a skos:Concept ;
+	skos:prefLabel "素描、描画"@ja ;
+	skos:notation "725" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#724> .
+
+<http://ndc10.linkedopendata.jp/#726> a skos:Concept ;
+	skos:prefLabel "漫画、挿絵、児童画"@ja ;
+	skos:notation "726" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#720> .
+
+<http://ndc10.linkedopendata.jp/#727> a skos:Concept ;
+	skos:prefLabel "グラフィックデザイン、図案"@ja ;
+	skos:notation "727" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#720> .
+
+<http://ndc10.linkedopendata.jp/#728> a skos:Concept ;
+	skos:prefLabel "書、書道"@ja ;
+	skos:notation "728" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#72> .
+
+<http://ndc10.linkedopendata.jp/#730> a skos:Concept ;
+	skos:prefLabel "版画"@ja ;
+	skos:notation "730" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#73> .
+
+<http://ndc10.linkedopendata.jp/#731> a skos:Concept ;
+	skos:prefLabel "版画材料・技法"@ja ;
+	skos:notation "731" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#730> .
+
+<http://ndc10.linkedopendata.jp/#732> a skos:Concept ;
+	skos:prefLabel "版画史、各国の版画"@ja ;
+	skos:notation "732" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#730> .
+
+<http://ndc10.linkedopendata.jp/#733> a skos:Concept ;
+	skos:prefLabel "木版画"@ja ;
+	skos:notation "733" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#730> .
+
+<http://ndc10.linkedopendata.jp/#734> a skos:Concept ;
+	skos:prefLabel "石版画（リトグラフ）"@ja ;
+	skos:notation "734" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#730> .
+
+<http://ndc10.linkedopendata.jp/#735> a skos:Concept ;
+	skos:prefLabel "銅版画、鋼版画"@ja ;
+	skos:notation "735" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#730> .
+
+<http://ndc10.linkedopendata.jp/#736> a skos:Concept ;
+	skos:prefLabel "リノリウム版画、ゴム版画"@ja ;
+	skos:notation "736" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#730> .
+
+<http://ndc10.linkedopendata.jp/#737> a skos:Concept ;
+	skos:prefLabel "写真版画、孔版画"@ja ;
+	skos:notation "737" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#730> .
+
+<http://ndc10.linkedopendata.jp/#739> a skos:Concept ;
+	skos:prefLabel "印章、篆刻、印譜"@ja ;
+	skos:notation "739" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#73> .
+
+<http://ndc10.linkedopendata.jp/#740> a skos:Concept ;
+	skos:prefLabel "写真"@ja ;
+	skos:notation "740" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#74> .
+
+<http://ndc10.linkedopendata.jp/#742> a skos:Concept ;
+	skos:prefLabel "写真器械・材料"@ja ;
+	skos:notation "742" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#740> .
+
+<http://ndc10.linkedopendata.jp/#743> a skos:Concept ;
+	skos:prefLabel "撮影技術"@ja ;
+	skos:notation "743" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#740> .
+
+<http://ndc10.linkedopendata.jp/#744> a skos:Concept ;
+	skos:prefLabel "現像、印画"@ja ;
+	skos:notation "744" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#740> .
+
+<http://ndc10.linkedopendata.jp/#745> a skos:Concept ;
+	skos:prefLabel "複写技術"@ja ;
+	skos:notation "745" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#740> .
+
+<http://ndc10.linkedopendata.jp/#746> a skos:Concept ;
+	skos:prefLabel "特殊写真"@ja ;
+	skos:notation "746" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#740> .
+
+<http://ndc10.linkedopendata.jp/#747> a skos:Concept ;
+	skos:prefLabel "写真の応用"@ja ;
+	skos:notation "747" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#740> .
+
+<http://ndc10.linkedopendata.jp/#748> a skos:Concept ;
+	skos:prefLabel "写真集"@ja ;
+	skos:notation "748" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#740> .
+
+<http://ndc10.linkedopendata.jp/#749> a skos:Concept ;
+	skos:prefLabel "印刷"@ja ;
+	skos:notation "749" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#74> .
+
+<http://ndc10.linkedopendata.jp/#750> a skos:Concept ;
+	skos:prefLabel "工芸"@ja ;
+	skos:notation "750" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#75> .
+
+<http://ndc10.linkedopendata.jp/#751> a skos:Concept ;
+	skos:prefLabel "陶磁工芸"@ja ;
+	skos:notation "751" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#750> .
+
+<http://ndc10.linkedopendata.jp/#752> a skos:Concept ;
+	skos:prefLabel "漆工芸"@ja ;
+	skos:notation "752" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#750> .
+
+<http://ndc10.linkedopendata.jp/#753> a skos:Concept ;
+	skos:prefLabel "染織工芸"@ja ;
+	skos:notation "753" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#750> .
+
+<http://ndc10.linkedopendata.jp/#754> a skos:Concept ;
+	skos:prefLabel "木竹工芸"@ja ;
+	skos:notation "754" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#750> .
+
+<http://ndc10.linkedopendata.jp/#755> a skos:Concept ;
+	skos:prefLabel "宝石・牙角・皮革工芸"@ja ;
+	skos:notation "755" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#750> .
+
+<http://ndc10.linkedopendata.jp/#756> a skos:Concept ;
+	skos:prefLabel "金工芸"@ja ;
+	skos:notation "756" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#750> .
+
+<http://ndc10.linkedopendata.jp/#757> a skos:Concept ;
+	skos:prefLabel "デザイン、装飾美術"@ja ;
+	skos:notation "757" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#750> .
+
+<http://ndc10.linkedopendata.jp/#758> a skos:Concept ;
+	skos:prefLabel "美術家具"@ja ;
+	skos:notation "758" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#750> .
+
+<http://ndc10.linkedopendata.jp/#759> a skos:Concept ;
+	skos:prefLabel "人形、玩具"@ja ;
+	skos:notation "759" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#750> .
+
+<http://ndc10.linkedopendata.jp/#760> a skos:Concept ;
+	skos:prefLabel "音楽"@ja ;
+	skos:notation "760" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#76> .
+
+<http://ndc10.linkedopendata.jp/#761> a skos:Concept ;
+	skos:prefLabel "音楽の一般理論、音楽学"@ja ;
+	skos:notation "761" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#760> .
+
+<http://ndc10.linkedopendata.jp/#762> a skos:Concept ;
+	skos:prefLabel "音楽史、各国の音楽"@ja ;
+	skos:notation "762" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#760> .
+
+<http://ndc10.linkedopendata.jp/#763> a skos:Concept ;
+	skos:prefLabel "楽器、器楽"@ja ;
+	skos:notation "763" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#760> .
+
+<http://ndc10.linkedopendata.jp/#764> a skos:Concept ;
+	skos:prefLabel "器楽合奏"@ja ;
+	skos:notation "764" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#760> .
+
+<http://ndc10.linkedopendata.jp/#765> a skos:Concept ;
+	skos:prefLabel "宗教音楽、聖楽"@ja ;
+	skos:notation "765" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#760> .
+
+<http://ndc10.linkedopendata.jp/#766> a skos:Concept ;
+	skos:prefLabel "劇音楽"@ja ;
+	skos:notation "766" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#760> .
+
+<http://ndc10.linkedopendata.jp/#767> a skos:Concept ;
+	skos:prefLabel "声楽"@ja ;
+	skos:notation "767" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#760> .
+
+<http://ndc10.linkedopendata.jp/#768> a skos:Concept ;
+	skos:prefLabel "邦楽"@ja ;
+	skos:notation "768" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#760> .
+
+<http://ndc10.linkedopendata.jp/#769> a skos:Concept ;
+	skos:prefLabel "舞踊、バレエ"@ja ;
+	skos:notation "769" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#76> .
+
+<http://ndc10.linkedopendata.jp/#770> a skos:Concept ;
+	skos:prefLabel "演劇"@ja ;
+	skos:notation "770" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#77> .
+
+<http://ndc10.linkedopendata.jp/#771> a skos:Concept ;
+	skos:prefLabel "劇場、演出、演技"@ja ;
+	skos:notation "771" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#770> .
+
+<http://ndc10.linkedopendata.jp/#772> a skos:Concept ;
+	skos:prefLabel "演劇史、各国の演劇"@ja ;
+	skos:notation "772" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#770> .
+
+<http://ndc10.linkedopendata.jp/#773> a skos:Concept ;
+	skos:prefLabel "能楽、狂言"@ja ;
+	skos:notation "773" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#770> .
+
+<http://ndc10.linkedopendata.jp/#774> a skos:Concept ;
+	skos:prefLabel "歌舞伎"@ja ;
+	skos:notation "774" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#770> .
+
+<http://ndc10.linkedopendata.jp/#775> a skos:Concept ;
+	skos:prefLabel "各種の演劇"@ja ;
+	skos:notation "775" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#770> .
+
+<http://ndc10.linkedopendata.jp/#777> a skos:Concept ;
+	skos:prefLabel "人形劇"@ja ;
+	skos:notation "777" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#770> .
+
+<http://ndc10.linkedopendata.jp/#778> a skos:Concept ;
+	skos:prefLabel "映画"@ja ;
+	skos:notation "778" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#77> .
+
+<http://ndc10.linkedopendata.jp/#779> a skos:Concept ;
+	skos:prefLabel "大衆演芸"@ja ;
+	skos:notation "779" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#77> .
+
+<http://ndc10.linkedopendata.jp/#780> a skos:Concept ;
+	skos:prefLabel "スポーツ、体育"@ja ;
+	skos:notation "780" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#78> .
+
+<http://ndc10.linkedopendata.jp/#781> a skos:Concept ;
+	skos:prefLabel "体操、遊戯"@ja ;
+	skos:notation "781" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#780> .
+
+<http://ndc10.linkedopendata.jp/#782> a skos:Concept ;
+	skos:prefLabel "陸上競技"@ja ;
+	skos:notation "782" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#780> .
+
+<http://ndc10.linkedopendata.jp/#783> a skos:Concept ;
+	skos:prefLabel "球技"@ja ;
+	skos:notation "783" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#780> .
+
+<http://ndc10.linkedopendata.jp/#784> a skos:Concept ;
+	skos:prefLabel "冬季競技"@ja ;
+	skos:notation "784" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#780> .
+
+<http://ndc10.linkedopendata.jp/#785> a skos:Concept ;
+	skos:prefLabel "水上競技"@ja ;
+	skos:notation "785" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#780> .
+
+<http://ndc10.linkedopendata.jp/#786> a skos:Concept ;
+	skos:prefLabel "戸外レクリエーション"@ja ;
+	skos:notation "786" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#780> .
+
+<http://ndc10.linkedopendata.jp/#787> a skos:Concept ;
+	skos:prefLabel "釣魚、遊猟"@ja ;
+	skos:notation "787" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#780> .
+
+<http://ndc10.linkedopendata.jp/#788> a skos:Concept ;
+	skos:prefLabel "相撲、拳闘、競馬"@ja ;
+	skos:notation "788" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#780> .
+
+<http://ndc10.linkedopendata.jp/#789> a skos:Concept ;
+	skos:prefLabel "武術"@ja ;
+	skos:notation "789" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#780> .
+
+<http://ndc10.linkedopendata.jp/#790> a skos:Concept ;
+	skos:prefLabel "諸芸、娯楽"@ja ;
+	skos:notation "790" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#79> .
+
+<http://ndc10.linkedopendata.jp/#791> a skos:Concept ;
+	skos:prefLabel "茶道"@ja ;
+	skos:notation "791" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#790> .
+
+<http://ndc10.linkedopendata.jp/#792> a skos:Concept ;
+	skos:prefLabel "香道"@ja ;
+	skos:notation "792" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#790> .
+
+<http://ndc10.linkedopendata.jp/#793> a skos:Concept ;
+	skos:prefLabel "花道（華道）"@ja ;
+	skos:notation "793" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#790> .
+
+<http://ndc10.linkedopendata.jp/#794> a skos:Concept ;
+	skos:prefLabel "ビリヤード"@ja ;
+	skos:notation "794" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#790> .
+
+<http://ndc10.linkedopendata.jp/#795> a skos:Concept ;
+	skos:prefLabel "囲碁"@ja ;
+	skos:notation "795" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#790> .
+
+<http://ndc10.linkedopendata.jp/#796> a skos:Concept ;
+	skos:prefLabel "将棋"@ja ;
+	skos:notation "796" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#790> .
+
+<http://ndc10.linkedopendata.jp/#797> a skos:Concept ;
+	skos:prefLabel "射倖ゲーム"@ja ;
+	skos:notation "797" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#790> .
+
+<http://ndc10.linkedopendata.jp/#798> a skos:Concept ;
+	skos:prefLabel "その他の室内娯楽"@ja ;
+	skos:notation "798" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#790> .
+
+<http://ndc10.linkedopendata.jp/#799> a skos:Concept ;
+	skos:prefLabel "ダンス"@ja ;
+	skos:notation "799" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#790> .
+
+<http://ndc10.linkedopendata.jp/#800> a skos:Concept ;
+	skos:prefLabel "言語"@ja ;
+	skos:notation "800" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#80> .
+
+<http://ndc10.linkedopendata.jp/#801> a skos:Concept ;
+	skos:prefLabel "言語学"@ja ;
+	skos:notation "801" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#800> .
+
+<http://ndc10.linkedopendata.jp/#802> a skos:Concept ;
+	skos:prefLabel "言語史・事情、言語政策"@ja ;
+	skos:notation "802" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#800> .
+
+<http://ndc10.linkedopendata.jp/#803> a skos:Concept ;
+	skos:prefLabel "参考図書（レファレンスブック）"@ja ;
+	skos:notation "803" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#800> .
+
+<http://ndc10.linkedopendata.jp/#804> a skos:Concept ;
+	skos:prefLabel "論文集、評論集、講演集"@ja ;
+	skos:notation "804" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#800> .
+
+<http://ndc10.linkedopendata.jp/#805> a skos:Concept ;
+	skos:prefLabel "逐次刊行物"@ja ;
+	skos:notation "805" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#800> .
+
+<http://ndc10.linkedopendata.jp/#806> a skos:Concept ;
+	skos:prefLabel "団体"@ja ;
+	skos:notation "806" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#800> .
+
+<http://ndc10.linkedopendata.jp/#807> a skos:Concept ;
+	skos:prefLabel "研究法、指導法、言語教育"@ja ;
+	skos:notation "807" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#800> .
+
+<http://ndc10.linkedopendata.jp/#808> a skos:Concept ;
+	skos:prefLabel "叢書、全集、選集"@ja ;
+	skos:notation "808" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#800> .
+
+<http://ndc10.linkedopendata.jp/#809> a skos:Concept ;
+	skos:prefLabel "言語生活"@ja ;
+	skos:notation "809" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#800> .
+
+<http://ndc10.linkedopendata.jp/#810> a skos:Concept ;
+	skos:prefLabel "日本語"@ja ;
+	skos:notation "810" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#81> .
+
+<http://ndc10.linkedopendata.jp/#811> a skos:Concept ;
+	skos:prefLabel "音声、音韻、文字"@ja ;
+	skos:notation "811" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#810> .
+
+<http://ndc10.linkedopendata.jp/#812> a skos:Concept ;
+	skos:prefLabel "語源、意味（語義）"@ja ;
+	skos:notation "812" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#810> .
+
+<http://ndc10.linkedopendata.jp/#813> a skos:Concept ;
+	skos:prefLabel "辞典"@ja ;
+	skos:notation "813" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#810> .
+
+<http://ndc10.linkedopendata.jp/#814> a skos:Concept ;
+	skos:prefLabel "語彙"@ja ;
+	skos:notation "814" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#810> .
+
+<http://ndc10.linkedopendata.jp/#815> a skos:Concept ;
+	skos:prefLabel "文法、語法"@ja ;
+	skos:notation "815" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#810> .
+
+<http://ndc10.linkedopendata.jp/#816> a skos:Concept ;
+	skos:prefLabel "文章、文体、作文"@ja ;
+	skos:notation "816" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#810> .
+
+<http://ndc10.linkedopendata.jp/#817> a skos:Concept ;
+	skos:prefLabel "読本、解釈、会話"@ja ;
+	skos:notation "817" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#810> .
+
+<http://ndc10.linkedopendata.jp/#818> a skos:Concept ;
+	skos:prefLabel "方言、訛語"@ja ;
+	skos:notation "818" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#810> .
+
+<http://ndc10.linkedopendata.jp/#820> a skos:Concept ;
+	skos:prefLabel "中国語"@ja ;
+	skos:notation "820" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#82> .
+
+<http://ndc10.linkedopendata.jp/#821> a skos:Concept ;
+	skos:prefLabel "音声、音韻、文字"@ja ;
+	skos:notation "821" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#820> .
+
+<http://ndc10.linkedopendata.jp/#822> a skos:Concept ;
+	skos:prefLabel "語源、意味（語義）"@ja ;
+	skos:notation "822" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#820> .
+
+<http://ndc10.linkedopendata.jp/#823> a skos:Concept ;
+	skos:prefLabel "辞典"@ja ;
+	skos:notation "823" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#820> .
+
+<http://ndc10.linkedopendata.jp/#824> a skos:Concept ;
+	skos:prefLabel "語彙"@ja ;
+	skos:notation "824" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#820> .
+
+<http://ndc10.linkedopendata.jp/#825> a skos:Concept ;
+	skos:prefLabel "文法、語法"@ja ;
+	skos:notation "825" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#820> .
+
+<http://ndc10.linkedopendata.jp/#826> a skos:Concept ;
+	skos:prefLabel "文章、文体、作文"@ja ;
+	skos:notation "826" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#820> .
+
+<http://ndc10.linkedopendata.jp/#827> a skos:Concept ;
+	skos:prefLabel "読本、解釈、会話"@ja ;
+	skos:notation "827" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#820> .
+
+<http://ndc10.linkedopendata.jp/#828> a skos:Concept ;
+	skos:prefLabel "方言、訛語"@ja ;
+	skos:notation "828" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#820> .
+
+<http://ndc10.linkedopendata.jp/#829> a skos:Concept ;
+	skos:prefLabel "その他の東洋の諸言語"@ja ;
+	skos:notation "829" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#82> .
+
+<http://ndc10.linkedopendata.jp/#830> a skos:Concept ;
+	skos:prefLabel "英語"@ja ;
+	skos:notation "830" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#83> .
+
+<http://ndc10.linkedopendata.jp/#831> a skos:Concept ;
+	skos:prefLabel "音声、音韻、文字"@ja ;
+	skos:notation "831" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#830> .
+
+<http://ndc10.linkedopendata.jp/#832> a skos:Concept ;
+	skos:prefLabel "語源、意味（語義）"@ja ;
+	skos:notation "832" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#830> .
+
+<http://ndc10.linkedopendata.jp/#833> a skos:Concept ;
+	skos:prefLabel "辞典"@ja ;
+	skos:notation "833" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#830> .
+
+<http://ndc10.linkedopendata.jp/#834> a skos:Concept ;
+	skos:prefLabel "語彙"@ja ;
+	skos:notation "834" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#830> .
+
+<http://ndc10.linkedopendata.jp/#835> a skos:Concept ;
+	skos:prefLabel "文法、語法"@ja ;
+	skos:notation "835" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#830> .
+
+<http://ndc10.linkedopendata.jp/#836> a skos:Concept ;
+	skos:prefLabel "文章、文体、作文"@ja ;
+	skos:notation "836" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#830> .
+
+<http://ndc10.linkedopendata.jp/#837> a skos:Concept ;
+	skos:prefLabel "読本、解釈、会話"@ja ;
+	skos:notation "837" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#830> .
+
+<http://ndc10.linkedopendata.jp/#838> a skos:Concept ;
+	skos:prefLabel "方言、訛語"@ja ;
+	skos:notation "838" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#830> .
+
+<http://ndc10.linkedopendata.jp/#840> a skos:Concept ;
+	skos:prefLabel "ドイツ語"@ja ;
+	skos:notation "840" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#84> .
+
+<http://ndc10.linkedopendata.jp/#841> a skos:Concept ;
+	skos:prefLabel "音声、音韻、文字"@ja ;
+	skos:notation "841" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#840> .
+
+<http://ndc10.linkedopendata.jp/#842> a skos:Concept ;
+	skos:prefLabel "語源、意味（語義）"@ja ;
+	skos:notation "842" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#840> .
+
+<http://ndc10.linkedopendata.jp/#843> a skos:Concept ;
+	skos:prefLabel "辞典"@ja ;
+	skos:notation "843" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#840> .
+
+<http://ndc10.linkedopendata.jp/#844> a skos:Concept ;
+	skos:prefLabel "語彙"@ja ;
+	skos:notation "844" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#840> .
+
+<http://ndc10.linkedopendata.jp/#845> a skos:Concept ;
+	skos:prefLabel "文法、語法"@ja ;
+	skos:notation "845" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#840> .
+
+<http://ndc10.linkedopendata.jp/#846> a skos:Concept ;
+	skos:prefLabel "文章、文体、作文"@ja ;
+	skos:notation "846" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#840> .
+
+<http://ndc10.linkedopendata.jp/#847> a skos:Concept ;
+	skos:prefLabel "読本、解釈、会話"@ja ;
+	skos:notation "847" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#840> .
+
+<http://ndc10.linkedopendata.jp/#848> a skos:Concept ;
+	skos:prefLabel "方言、訛語"@ja ;
+	skos:notation "848" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#840> .
+
+<http://ndc10.linkedopendata.jp/#849> a skos:Concept ;
+	skos:prefLabel "その他のゲルマン諸語"@ja ;
+	skos:notation "849" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#84> .
+
+<http://ndc10.linkedopendata.jp/#850> a skos:Concept ;
+	skos:prefLabel "フランス語"@ja ;
+	skos:notation "850" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#85> .
+
+<http://ndc10.linkedopendata.jp/#851> a skos:Concept ;
+	skos:prefLabel "音声、音韻、文字"@ja ;
+	skos:notation "851" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#850> .
+
+<http://ndc10.linkedopendata.jp/#852> a skos:Concept ;
+	skos:prefLabel "語源、意味（語義）"@ja ;
+	skos:notation "852" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#850> .
+
+<http://ndc10.linkedopendata.jp/#853> a skos:Concept ;
+	skos:prefLabel "辞典"@ja ;
+	skos:notation "853" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#850> .
+
+<http://ndc10.linkedopendata.jp/#854> a skos:Concept ;
+	skos:prefLabel "語彙"@ja ;
+	skos:notation "854" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#850> .
+
+<http://ndc10.linkedopendata.jp/#855> a skos:Concept ;
+	skos:prefLabel "文法、語法"@ja ;
+	skos:notation "855" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#850> .
+
+<http://ndc10.linkedopendata.jp/#856> a skos:Concept ;
+	skos:prefLabel "文章、文体、作文"@ja ;
+	skos:notation "856" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#850> .
+
+<http://ndc10.linkedopendata.jp/#857> a skos:Concept ;
+	skos:prefLabel "読本、解釈、会話"@ja ;
+	skos:notation "857" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#850> .
+
+<http://ndc10.linkedopendata.jp/#858> a skos:Concept ;
+	skos:prefLabel "方言、訛語"@ja ;
+	skos:notation "858" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#850> .
+
+<http://ndc10.linkedopendata.jp/#859> a skos:Concept ;
+	skos:prefLabel "プロバンス語"@ja ;
+	skos:notation "859" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#85> .
+
+<http://ndc10.linkedopendata.jp/#860> a skos:Concept ;
+	skos:prefLabel "スペイン語"@ja ;
+	skos:notation "860" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#86> .
+
+<http://ndc10.linkedopendata.jp/#861> a skos:Concept ;
+	skos:prefLabel "音声、音韻、文字"@ja ;
+	skos:notation "861" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#860> .
+
+<http://ndc10.linkedopendata.jp/#862> a skos:Concept ;
+	skos:prefLabel "語源、意味（語義）"@ja ;
+	skos:notation "862" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#860> .
+
+<http://ndc10.linkedopendata.jp/#863> a skos:Concept ;
+	skos:prefLabel "辞典"@ja ;
+	skos:notation "863" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#860> .
+
+<http://ndc10.linkedopendata.jp/#864> a skos:Concept ;
+	skos:prefLabel "語彙"@ja ;
+	skos:notation "864" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#860> .
+
+<http://ndc10.linkedopendata.jp/#865> a skos:Concept ;
+	skos:prefLabel "文法、語法"@ja ;
+	skos:notation "865" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#860> .
+
+<http://ndc10.linkedopendata.jp/#866> a skos:Concept ;
+	skos:prefLabel "文章、文体、作文"@ja ;
+	skos:notation "866" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#860> .
+
+<http://ndc10.linkedopendata.jp/#867> a skos:Concept ;
+	skos:prefLabel "読本、解釈、会話"@ja ;
+	skos:notation "867" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#860> .
+
+<http://ndc10.linkedopendata.jp/#868> a skos:Concept ;
+	skos:prefLabel "方言、訛語"@ja ;
+	skos:notation "868" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#860> .
+
+<http://ndc10.linkedopendata.jp/#869> a skos:Concept ;
+	skos:prefLabel "ポルトガル語"@ja ;
+	skos:notation "869" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#86> .
+
+<http://ndc10.linkedopendata.jp/#870> a skos:Concept ;
+	skos:prefLabel "イタリア語"@ja ;
+	skos:notation "870" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#87> .
+
+<http://ndc10.linkedopendata.jp/#871> a skos:Concept ;
+	skos:prefLabel "音声、音韻、文字"@ja ;
+	skos:notation "871" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#870> .
+
+<http://ndc10.linkedopendata.jp/#872> a skos:Concept ;
+	skos:prefLabel "語源、意味（語義）"@ja ;
+	skos:notation "872" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#870> .
+
+<http://ndc10.linkedopendata.jp/#873> a skos:Concept ;
+	skos:prefLabel "辞典"@ja ;
+	skos:notation "873" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#870> .
+
+<http://ndc10.linkedopendata.jp/#874> a skos:Concept ;
+	skos:prefLabel "語彙"@ja ;
+	skos:notation "874" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#870> .
+
+<http://ndc10.linkedopendata.jp/#875> a skos:Concept ;
+	skos:prefLabel "文法、語法"@ja ;
+	skos:notation "875" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#870> .
+
+<http://ndc10.linkedopendata.jp/#876> a skos:Concept ;
+	skos:prefLabel "文章、文体、作文"@ja ;
+	skos:notation "876" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#870> .
+
+<http://ndc10.linkedopendata.jp/#877> a skos:Concept ;
+	skos:prefLabel "読本、解釈、会話"@ja ;
+	skos:notation "877" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#870> .
+
+<http://ndc10.linkedopendata.jp/#878> a skos:Concept ;
+	skos:prefLabel "方言、訛語"@ja ;
+	skos:notation "878" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#870> .
+
+<http://ndc10.linkedopendata.jp/#879> a skos:Concept ;
+	skos:prefLabel "その他のロマンス諸語"@ja ;
+	skos:notation "879" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#87> .
+
+<http://ndc10.linkedopendata.jp/#880> a skos:Concept ;
+	skos:prefLabel "ロシア語"@ja ;
+	skos:notation "880" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#88> .
+
+<http://ndc10.linkedopendata.jp/#881> a skos:Concept ;
+	skos:prefLabel "音声、音韻、文字"@ja ;
+	skos:notation "881" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#880> .
+
+<http://ndc10.linkedopendata.jp/#882> a skos:Concept ;
+	skos:prefLabel "語源、意味（語義）"@ja ;
+	skos:notation "882" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#880> .
+
+<http://ndc10.linkedopendata.jp/#883> a skos:Concept ;
+	skos:prefLabel "辞典"@ja ;
+	skos:notation "883" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#880> .
+
+<http://ndc10.linkedopendata.jp/#884> a skos:Concept ;
+	skos:prefLabel "語彙"@ja ;
+	skos:notation "884" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#880> .
+
+<http://ndc10.linkedopendata.jp/#885> a skos:Concept ;
+	skos:prefLabel "文法、語法"@ja ;
+	skos:notation "885" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#880> .
+
+<http://ndc10.linkedopendata.jp/#886> a skos:Concept ;
+	skos:prefLabel "文章、文体、作文"@ja ;
+	skos:notation "886" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#880> .
+
+<http://ndc10.linkedopendata.jp/#887> a skos:Concept ;
+	skos:prefLabel "読本、解釈、会話"@ja ;
+	skos:notation "887" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#880> .
+
+<http://ndc10.linkedopendata.jp/#888> a skos:Concept ;
+	skos:prefLabel "方言、訛語"@ja ;
+	skos:notation "888" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#880> .
+
+<http://ndc10.linkedopendata.jp/#889> a skos:Concept ;
+	skos:prefLabel "その他のスラブ諸語"@ja ;
+	skos:notation "889" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#88> .
+
+<http://ndc10.linkedopendata.jp/#890> a skos:Concept ;
+	skos:prefLabel "その他の諸言語"@ja ;
+	skos:notation "890" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#89> .
+
+<http://ndc10.linkedopendata.jp/#891> a skos:Concept ;
+	skos:prefLabel "ギリシア語"@ja ;
+	skos:notation "891" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#890> .
+
+<http://ndc10.linkedopendata.jp/#892> a skos:Concept ;
+	skos:prefLabel "ラテン語"@ja ;
+	skos:notation "892" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#890> .
+
+<http://ndc10.linkedopendata.jp/#893> a skos:Concept ;
+	skos:prefLabel "その他のヨーロッパの諸言語"@ja ;
+	skos:notation "893" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#890> .
+
+<http://ndc10.linkedopendata.jp/#894> a skos:Concept ;
+	skos:prefLabel "アフリカの諸言語"@ja ;
+	skos:notation "894" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#890> .
+
+<http://ndc10.linkedopendata.jp/#895> a skos:Concept ;
+	skos:prefLabel "アメリカの諸言語"@ja ;
+	skos:notation "895" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#890> .
+
+<http://ndc10.linkedopendata.jp/#897> a skos:Concept ;
+	skos:prefLabel "オーストラリアの諸言語"@ja ;
+	skos:notation "897" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#890> .
+
+<http://ndc10.linkedopendata.jp/#899> a skos:Concept ;
+	skos:prefLabel "国際語（人工語）"@ja ;
+	skos:notation "899" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#890> .
+
+<http://ndc10.linkedopendata.jp/#900> a skos:Concept ;
+	skos:prefLabel "文学"@ja ;
+	skos:notation "900" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#90> .
+
+<http://ndc10.linkedopendata.jp/#901> a skos:Concept ;
+	skos:prefLabel "文学理論・作法"@ja ;
+	skos:notation "901" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#900> .
+
+<http://ndc10.linkedopendata.jp/#902> a skos:Concept ;
+	skos:prefLabel "文学史、文学思想史"@ja ;
+	skos:notation "902" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#900> .
+
+<http://ndc10.linkedopendata.jp/#903> a skos:Concept ;
+	skos:prefLabel "参考図書（レファレンスブック）"@ja ;
+	skos:notation "903" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#900> .
+
+<http://ndc10.linkedopendata.jp/#904> a skos:Concept ;
+	skos:prefLabel "論文集、評論集、講演集"@ja ;
+	skos:notation "904" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#900> .
+
+<http://ndc10.linkedopendata.jp/#905> a skos:Concept ;
+	skos:prefLabel "逐次刊行物"@ja ;
+	skos:notation "905" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#900> .
+
+<http://ndc10.linkedopendata.jp/#906> a skos:Concept ;
+	skos:prefLabel "団体"@ja ;
+	skos:notation "906" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#900> .
+
+<http://ndc10.linkedopendata.jp/#907> a skos:Concept ;
+	skos:prefLabel "研究法、指導法、文学教育"@ja ;
+	skos:notation "907" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#900> .
+
+<http://ndc10.linkedopendata.jp/#908> a skos:Concept ;
+	skos:prefLabel "叢書、全集、選集"@ja ;
+	skos:notation "908" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#900> .
+
+<http://ndc10.linkedopendata.jp/#909> a skos:Concept ;
+	skos:prefLabel "児童文学研究"@ja ;
+	skos:notation "909" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#900> .
+
+<http://ndc10.linkedopendata.jp/#910> a skos:Concept ;
+	skos:prefLabel "日本文学"@ja ;
+	skos:notation "910" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#91> .
+
+<http://ndc10.linkedopendata.jp/#911> a skos:Concept ;
+	skos:prefLabel "詩歌"@ja ;
+	skos:notation "911" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#910> .
+
+<http://ndc10.linkedopendata.jp/#912> a skos:Concept ;
+	skos:prefLabel "戯曲"@ja ;
+	skos:notation "912" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#910> .
+
+<http://ndc10.linkedopendata.jp/#913> a skos:Concept ;
+	skos:prefLabel "小説、物語"@ja ;
+	skos:notation "913" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#910> .
+
+<http://ndc10.linkedopendata.jp/#914> a skos:Concept ;
+	skos:prefLabel "評論、エッセイ、随筆"@ja ;
+	skos:notation "914" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#910> .
+
+<http://ndc10.linkedopendata.jp/#915> a skos:Concept ;
+	skos:prefLabel "日記、書簡、紀行"@ja ;
+	skos:notation "915" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#910> .
+
+<http://ndc10.linkedopendata.jp/#916> a skos:Concept ;
+	skos:prefLabel "記録、手記、ルポルタージュ"@ja ;
+	skos:notation "916" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#910> .
+
+<http://ndc10.linkedopendata.jp/#917> a skos:Concept ;
+	skos:prefLabel "箴言、アフォリズム、寸言"@ja ;
+	skos:notation "917" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#910> .
+
+<http://ndc10.linkedopendata.jp/#918> a skos:Concept ;
+	skos:prefLabel "作品集"@ja ;
+	skos:notation "918" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#910> .
+
+<http://ndc10.linkedopendata.jp/#919> a skos:Concept ;
+	skos:prefLabel "漢詩文、日本漢文学"@ja ;
+	skos:notation "919" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#910> .
+
+<http://ndc10.linkedopendata.jp/#920> a skos:Concept ;
+	skos:prefLabel "中国文学"@ja ;
+	skos:notation "920" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#92> .
+
+<http://ndc10.linkedopendata.jp/#921> a skos:Concept ;
+	skos:prefLabel "詩歌、韻文、詩文"@ja ;
+	skos:notation "921" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#920> .
+
+<http://ndc10.linkedopendata.jp/#922> a skos:Concept ;
+	skos:prefLabel "戯曲"@ja ;
+	skos:notation "922" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#920> .
+
+<http://ndc10.linkedopendata.jp/#923> a skos:Concept ;
+	skos:prefLabel "小説、物語"@ja ;
+	skos:notation "923" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#920> .
+
+<http://ndc10.linkedopendata.jp/#924> a skos:Concept ;
+	skos:prefLabel "評論、エッセイ、随筆"@ja ;
+	skos:notation "924" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#920> .
+
+<http://ndc10.linkedopendata.jp/#925> a skos:Concept ;
+	skos:prefLabel "日記、書簡、紀行"@ja ;
+	skos:notation "925" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#920> .
+
+<http://ndc10.linkedopendata.jp/#926> a skos:Concept ;
+	skos:prefLabel "記録、手記、ルポルタージュ"@ja ;
+	skos:notation "926" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#920> .
+
+<http://ndc10.linkedopendata.jp/#927> a skos:Concept ;
+	skos:prefLabel "箴言、アフォリズム、寸言"@ja ;
+	skos:notation "927" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#920> .
+
+<http://ndc10.linkedopendata.jp/#928> a skos:Concept ;
+	skos:prefLabel "作品集"@ja ;
+	skos:notation "928" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#920> .
+
+<http://ndc10.linkedopendata.jp/#929> a skos:Concept ;
+	skos:prefLabel "その他の東洋文学"@ja ;
+	skos:notation "929" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#92> .
+
+<http://ndc10.linkedopendata.jp/#930> a skos:Concept ;
+	skos:prefLabel "英米文学"@ja ;
+	skos:notation "930" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#93> .
+
+<http://ndc10.linkedopendata.jp/#931> a skos:Concept ;
+	skos:prefLabel "詩"@ja ;
+	skos:notation "931" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#930> .
+
+<http://ndc10.linkedopendata.jp/#932> a skos:Concept ;
+	skos:prefLabel "戯曲"@ja ;
+	skos:notation "932" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#930> .
+
+<http://ndc10.linkedopendata.jp/#933> a skos:Concept ;
+	skos:prefLabel "小説、物語"@ja ;
+	skos:notation "933" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#930> .
+
+<http://ndc10.linkedopendata.jp/#934> a skos:Concept ;
+	skos:prefLabel "評論、エッセイ、随筆"@ja ;
+	skos:notation "934" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#930> .
+
+<http://ndc10.linkedopendata.jp/#935> a skos:Concept ;
+	skos:prefLabel "日記、書簡、紀行"@ja ;
+	skos:notation "935" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#930> .
+
+<http://ndc10.linkedopendata.jp/#936> a skos:Concept ;
+	skos:prefLabel "記録、手記、ルポルタージュ"@ja ;
+	skos:notation "936" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#930> .
+
+<http://ndc10.linkedopendata.jp/#937> a skos:Concept ;
+	skos:prefLabel "箴言、アフォリズム、寸言"@ja ;
+	skos:notation "937" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#930> .
+
+<http://ndc10.linkedopendata.jp/#938> a skos:Concept ;
+	skos:prefLabel "作品集"@ja ;
+	skos:notation "938" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#930> .
+
+<http://ndc10.linkedopendata.jp/#940> a skos:Concept ;
+	skos:prefLabel "ドイツ文学"@ja ;
+	skos:notation "940" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#94> .
+
+<http://ndc10.linkedopendata.jp/#941> a skos:Concept ;
+	skos:prefLabel "詩"@ja ;
+	skos:notation "941" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#940> .
+
+<http://ndc10.linkedopendata.jp/#942> a skos:Concept ;
+	skos:prefLabel "戯曲"@ja ;
+	skos:notation "942" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#940> .
+
+<http://ndc10.linkedopendata.jp/#943> a skos:Concept ;
+	skos:prefLabel "小説、物語"@ja ;
+	skos:notation "943" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#940> .
+
+<http://ndc10.linkedopendata.jp/#944> a skos:Concept ;
+	skos:prefLabel "評論、エッセイ、随筆"@ja ;
+	skos:notation "944" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#940> .
+
+<http://ndc10.linkedopendata.jp/#945> a skos:Concept ;
+	skos:prefLabel "日記、書簡、紀行"@ja ;
+	skos:notation "945" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#940> .
+
+<http://ndc10.linkedopendata.jp/#946> a skos:Concept ;
+	skos:prefLabel "記録、手記、ルポルタージュ"@ja ;
+	skos:notation "946" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#940> .
+
+<http://ndc10.linkedopendata.jp/#947> a skos:Concept ;
+	skos:prefLabel "箴言、アフォリズム、寸言"@ja ;
+	skos:notation "947" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#940> .
+
+<http://ndc10.linkedopendata.jp/#948> a skos:Concept ;
+	skos:prefLabel "作品集"@ja ;
+	skos:notation "948" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#940> .
+
+<http://ndc10.linkedopendata.jp/#949> a skos:Concept ;
+	skos:prefLabel "その他のゲルマン文学"@ja ;
+	skos:notation "949" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#94> .
+
+<http://ndc10.linkedopendata.jp/#950> a skos:Concept ;
+	skos:prefLabel "フランス文学"@ja ;
+	skos:notation "950" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#95> .
+
+<http://ndc10.linkedopendata.jp/#951> a skos:Concept ;
+	skos:prefLabel "詩"@ja ;
+	skos:notation "951" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#950> .
+
+<http://ndc10.linkedopendata.jp/#952> a skos:Concept ;
+	skos:prefLabel "戯曲"@ja ;
+	skos:notation "952" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#950> .
+
+<http://ndc10.linkedopendata.jp/#953> a skos:Concept ;
+	skos:prefLabel "小説、物語"@ja ;
+	skos:notation "953" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#950> .
+
+<http://ndc10.linkedopendata.jp/#954> a skos:Concept ;
+	skos:prefLabel "評論、エッセイ、随筆"@ja ;
+	skos:notation "954" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#950> .
+
+<http://ndc10.linkedopendata.jp/#955> a skos:Concept ;
+	skos:prefLabel "日記、書簡、紀行"@ja ;
+	skos:notation "955" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#950> .
+
+<http://ndc10.linkedopendata.jp/#956> a skos:Concept ;
+	skos:prefLabel "記録、手記、ルポルタージュ"@ja ;
+	skos:notation "956" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#950> .
+
+<http://ndc10.linkedopendata.jp/#957> a skos:Concept ;
+	skos:prefLabel "箴言、アフォリズム、寸言"@ja ;
+	skos:notation "957" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#950> .
+
+<http://ndc10.linkedopendata.jp/#958> a skos:Concept ;
+	skos:prefLabel "作品集"@ja ;
+	skos:notation "958" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#950> .
+
+<http://ndc10.linkedopendata.jp/#959> a skos:Concept ;
+	skos:prefLabel "プロバンス文学"@ja ;
+	skos:notation "959" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#95> .
+
+<http://ndc10.linkedopendata.jp/#960> a skos:Concept ;
+	skos:prefLabel "スペイン文学"@ja ;
+	skos:notation "960" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#96> .
+
+<http://ndc10.linkedopendata.jp/#961> a skos:Concept ;
+	skos:prefLabel "詩"@ja ;
+	skos:notation "961" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#960> .
+
+<http://ndc10.linkedopendata.jp/#962> a skos:Concept ;
+	skos:prefLabel "戯曲"@ja ;
+	skos:notation "962" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#960> .
+
+<http://ndc10.linkedopendata.jp/#963> a skos:Concept ;
+	skos:prefLabel "小説、物語"@ja ;
+	skos:notation "963" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#960> .
+
+<http://ndc10.linkedopendata.jp/#964> a skos:Concept ;
+	skos:prefLabel "評論、エッセイ、随筆"@ja ;
+	skos:notation "964" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#960> .
+
+<http://ndc10.linkedopendata.jp/#965> a skos:Concept ;
+	skos:prefLabel "日記、書簡、紀行"@ja ;
+	skos:notation "965" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#960> .
+
+<http://ndc10.linkedopendata.jp/#966> a skos:Concept ;
+	skos:prefLabel "記録、手記、ルポルタージュ"@ja ;
+	skos:notation "966" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#960> .
+
+<http://ndc10.linkedopendata.jp/#967> a skos:Concept ;
+	skos:prefLabel "箴言、アフォリズム、寸言"@ja ;
+	skos:notation "967" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#960> .
+
+<http://ndc10.linkedopendata.jp/#968> a skos:Concept ;
+	skos:prefLabel "作品集"@ja ;
+	skos:notation "968" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#960> .
+
+<http://ndc10.linkedopendata.jp/#969> a skos:Concept ;
+	skos:prefLabel "ポルトガル文学"@ja ;
+	skos:notation "969" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#96> .
+
+<http://ndc10.linkedopendata.jp/#970> a skos:Concept ;
+	skos:prefLabel "イタリア文学"@ja ;
+	skos:notation "970" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#97> .
+
+<http://ndc10.linkedopendata.jp/#971> a skos:Concept ;
+	skos:prefLabel "詩"@ja ;
+	skos:notation "971" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#970> .
+
+<http://ndc10.linkedopendata.jp/#972> a skos:Concept ;
+	skos:prefLabel "戯曲"@ja ;
+	skos:notation "972" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#970> .
+
+<http://ndc10.linkedopendata.jp/#973> a skos:Concept ;
+	skos:prefLabel "小説、物語"@ja ;
+	skos:notation "973" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#970> .
+
+<http://ndc10.linkedopendata.jp/#974> a skos:Concept ;
+	skos:prefLabel "評論、エッセイ、随筆"@ja ;
+	skos:notation "974" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#970> .
+
+<http://ndc10.linkedopendata.jp/#975> a skos:Concept ;
+	skos:prefLabel "日記、書簡、紀行"@ja ;
+	skos:notation "975" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#970> .
+
+<http://ndc10.linkedopendata.jp/#976> a skos:Concept ;
+	skos:prefLabel "記録、手記、ルポルタージュ"@ja ;
+	skos:notation "976" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#970> .
+
+<http://ndc10.linkedopendata.jp/#977> a skos:Concept ;
+	skos:prefLabel "箴言、アフォリズム、寸言"@ja ;
+	skos:notation "977" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#970> .
+
+<http://ndc10.linkedopendata.jp/#978> a skos:Concept ;
+	skos:prefLabel "作品集"@ja ;
+	skos:notation "978" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#970> .
+
+<http://ndc10.linkedopendata.jp/#979> a skos:Concept ;
+	skos:prefLabel "その他のロマンス文学"@ja ;
+	skos:notation "979" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#97> .
+
+<http://ndc10.linkedopendata.jp/#980> a skos:Concept ;
+	skos:prefLabel "ロシア・ソビエト文学"@ja ;
+	skos:notation "980" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#98> .
+
+<http://ndc10.linkedopendata.jp/#981> a skos:Concept ;
+	skos:prefLabel "詩"@ja ;
+	skos:notation "981" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#980> .
+
+<http://ndc10.linkedopendata.jp/#982> a skos:Concept ;
+	skos:prefLabel "戯曲"@ja ;
+	skos:notation "982" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#980> .
+
+<http://ndc10.linkedopendata.jp/#983> a skos:Concept ;
+	skos:prefLabel "小説、物語"@ja ;
+	skos:notation "983" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#980> .
+
+<http://ndc10.linkedopendata.jp/#984> a skos:Concept ;
+	skos:prefLabel "評論、エッセイ、随筆"@ja ;
+	skos:notation "984" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#980> .
+
+<http://ndc10.linkedopendata.jp/#985> a skos:Concept ;
+	skos:prefLabel "日記、書簡、紀行"@ja ;
+	skos:notation "985" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#980> .
+
+<http://ndc10.linkedopendata.jp/#986> a skos:Concept ;
+	skos:prefLabel "記録、手記、ルポルタージュ"@ja ;
+	skos:notation "986" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#980> .
+
+<http://ndc10.linkedopendata.jp/#987> a skos:Concept ;
+	skos:prefLabel "箴言、アフォリズム、寸言"@ja ;
+	skos:notation "987" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#980> .
+
+<http://ndc10.linkedopendata.jp/#988> a skos:Concept ;
+	skos:prefLabel "作品集"@ja ;
+	skos:notation "988" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#980> .
+
+<http://ndc10.linkedopendata.jp/#989> a skos:Concept ;
+	skos:prefLabel "その他のスラブ文学"@ja ;
+	skos:notation "989" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#98> .
+
+<http://ndc10.linkedopendata.jp/#990> a skos:Concept ;
+	skos:prefLabel "その他の諸文学"@ja ;
+	skos:notation "990" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#99> .
+
+<http://ndc10.linkedopendata.jp/#991> a skos:Concept ;
+	skos:prefLabel "ギリシア文学"@ja ;
+	skos:notation "991" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#990> .
+
+<http://ndc10.linkedopendata.jp/#992> a skos:Concept ;
+	skos:prefLabel "ラテン文学"@ja ;
+	skos:notation "992" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#990> .
+
+<http://ndc10.linkedopendata.jp/#993> a skos:Concept ;
+	skos:prefLabel "その他のヨーロッパ文学"@ja ;
+	skos:notation "993" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#990> .
+
+<http://ndc10.linkedopendata.jp/#994> a skos:Concept ;
+	skos:prefLabel "アフリカ文学"@ja ;
+	skos:notation "994" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#990> .
+
+<http://ndc10.linkedopendata.jp/#995> a skos:Concept ;
+	skos:prefLabel "アメリカ先住民語の文学"@ja ;
+	skos:notation "995" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#990> .
+
+<http://ndc10.linkedopendata.jp/#997> a skos:Concept ;
+	skos:prefLabel "オーストラリア先住民語の文学"@ja ;
+	skos:notation "997" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#990> .
+
+<http://ndc10.linkedopendata.jp/#999> a skos:Concept ;
+	skos:prefLabel "国際語（人工語）による文学"@ja ;
+	skos:notation "999" ;
+	skos:broader <http://ndc10.linkedopendata.jp/#990> .
