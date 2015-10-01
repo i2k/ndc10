@@ -2134,12 +2134,12 @@
 <http://ndc10.linkedopendata.jp/#358> a skos:Concept ;
 	skos:prefLabel "人口統計、国勢調査"@ja ;
 	skos:notation "358" ;
-	skos:broader <http://ndc10.linkedopendata.jp/#36> .
+	skos:broader <http://ndc10.linkedopendata.jp/#350> .
 
 <http://ndc10.linkedopendata.jp/#360> a skos:Concept ;
 	skos:prefLabel "社会"@ja ;
 	skos:notation "360" ;
-	skos:broader <http://ndc10.linkedopendata.jp/#360> .
+	skos:broader <http://ndc10.linkedopendata.jp/#36> .
 
 <http://ndc10.linkedopendata.jp/#361> a skos:Concept ;
 	skos:prefLabel "社会学"@ja ;
